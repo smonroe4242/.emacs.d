@@ -7,3 +7,4 @@
 (global-set-key (kbd "C-c n") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-c p") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c s") 'mc/sort-regions)
+(global-set-key (kbd "C-c %") 'mc/mark-all-in-region-regexp)

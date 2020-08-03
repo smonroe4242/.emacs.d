@@ -6,7 +6,7 @@
 ;    by: thor <thor@42.fr>                           +#+  +:+       +#+         ;
 ;                                                  +#+#+#+#+#+   +#+            ;
 ;    Created: 2013/06/18 14:01:14 by thor               #+#    #+#              ;
-;    Updated: 2019/06/16 17:29:46 by smonroe          ###   ########.fr        ;
+;    Updated: 2020/04/09 12:55:03 by smonroe          ###   ########.fr        ;
 ;                                                                               ;
 ;*******************************************************************************;
 
@@ -32,6 +32,7 @@ There are two things you can do about this warning:
 ;         '("melpa" . "http://melpa.org/packages/") t)
 ;  (add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t)
   (add-to-list 'package-archives (cons "melpa-stable" (concat proto "://stable.melpa.org/packages/")) t)
+  (add-to-list 'package-archives (cons "gnu" (concat proto "://elpa.gnu.org/packages/")) t)
   (when (< emacs-major-version 24)
     ;; For important compatibility libraries like cl-lib
     (add-to-list 'package-archives (cons "gnu" (concat proto "://elpa.gnu.org/packages/")))))
@@ -55,12 +56,13 @@ There are two things you can do about this warning:
 (require 'setup-general)
 (if (version< emacs-version "24.4")
     (require 'setup-ivy-counsel)
-  (require 'setup-helm)
-  (require 'setup-helm-gtags))
-;; (require 'setup-ggtags)
+  (require 'setup-helm))
+(require 'setup-helm-gtags)
+;(require 'setup-ggtags); need to install separately
 (require 'setup-cedet)
 (require 'setup-editing)
-
+(require 'lsp-mode)
+(add-hook 'gdscript-mode-hook #'lsp)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 										;only one of these at a time please
 (custom-set-variables
@@ -68,16 +70,23 @@ There are two things you can do about this warning:
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(exec-path
+	 (quote
+		("/usr/local/bin" "/usr/bin" "/bin" "/usr/local/games" "/usr/games" "/usr/lib/emacs/26.1/x86_64-linux-gnu" "~/Godot/bin")))
+ '(gdscript-gdformat-save-and-format nil)
+ '(gdscript-godot-executable "~/Godot/godot/bin/godot.x11.opt.tools.64")
  '(package-selected-packages
-   (quote
-	(multiple-cursors iedit volatile-highlights anzu comment-dwim-2 ws-butler dtrt-indent clean-aindent-mode yasnippet undo-tree helm-gtags helm-projectile helm-swoop helm zygospore projectile company use-package geiser))))
+	 (quote
+		(helm-lsp spinner lsp-mode gdscript-rx ggtags tide gnu-elpa-keyring-update multiple-cursors iedit volatile-highlights anzu comment-dwim-2 ws-butler dtrt-indent yasnippet undo-tree helm-gtags helm-projectile helm-swoop helm zygospore projectile company use-package geiser))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 113 :width normal :foundry "PfEd" :family "DejaVu Sans Mono"))))
+ '(cursor ((t (:background "dim gray"))))
+ '(window-divider-first-pixel ((t (:foreground "dim gray")))))
 										;thank you
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -85,12 +94,11 @@ There are two things you can do about this warning:
 (setq manconfig_files "/usr/share/emacs/site-lisp/")
 (setq load-path (append (list nil manconfig_files) load-path))
 
-(load "/root/.emacs.d/list.el")
-(load "/root/.emacs.d/string.el")
-(load "/root/.emacs.d/comments.el")
-(load "/root/.emacs.d/header.el")
-(load "/root/.emacs.d/functions.el")
-(load "/root/.emacs.d/multi-curs.el")
+(load "/home/smonroe/.emacs.d/list.el")
+(load "/home/smonroe/.emacs.d/string.el")
+(load "/home/smonroe/.emacs.d/comments.el")
+(load "/home/smonroe/.emacs.d/functions.el")
+(load "/home/smonroe/.emacs.d/multi-curs.el")
 
 (autoload 'php-mode "php-mode" "Major mode for editing PHP code" t)
 (add-to-list 'auto-mode-alist '("\\.php[34]?\\'\\|\\.phtml\\'" . php-mode))
@@ -98,23 +106,83 @@ There are two things you can do about this warning:
 ; Set default emacs configuration
 (set-language-environment "UTF-8")
 (setq-default font-lock-global-modes t)
-(setq-default tab-width 4)
+(setq-default tab-width 2)
 (setq-default indent-tabs-mode t)
+(setq-default basic-offset 2)
 (global-set-key (kbd "DEL") 'backward-delete-char)
 (setq-default c-backspace-function 'backward-delete-char)
-(setq-default c-basic-offset 4)
+(setq-default c-basic-offset 2)
 (setq-default c-default-style "linux")
-(setq-default tab-stop-list '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120))
+(setq-default tab-stop-list (number-sequence 2 120 2))
 
-(global-set-key (kbd "C-c <up>") 'windmove-up)
-(global-set-key (kbd "C-c <down>") 'windmove-down)
-(global-set-key (kbd "C-c <right>") 'windmove-right)
-(global-set-key (kbd "C-c <left>") 'windmove-left)
+(global-set-key (kbd "TAB") 'indent-relative)
+(global-set-key (kbd "<tab>") 'indent-relative)
 (global-set-key (kbd "C-c j") 'goto-line)
 (global-set-key (kbd "C-c r") 'replace-string)
 (global-set-key (kbd "C-c b") 'battery)
+(global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)
 
-(desktop-save-mode 1)
 (display-battery-mode 1)
 (setq line-number-mode t)
 (setq column-number-mode t)
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
+(set-face-attribute 'default nil :font "Monospace-8")
+(add-to-list 'exec-path "/home/smonroe/Godot/bin")
+(setenv "PATH" (mapconcat #'identity exec-path path-separator))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Stripping out ansi escape codes from various emacs buffers
+;; namely compilation mode and shell mode
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Stolen from (http://endlessparentheses.com/ansi-colors-in-the-compilation-buffer-output.html)
+(require 'ansi-color)
+(defun endless/colorize-compilation ()
+  "Colorize from `compilation-filter-start' to `point'."
+  (let ((inhibit-read-only t))
+    (ansi-color-apply-on-region
+     compilation-filter-start (point))))
+
+(add-hook 'compilation-filter-hook
+          #'endless/colorize-compilation)
+
+;; Stolen from (https://oleksandrmanzyuk.wordpress.com/2011/11/05/better-emacs-shell-part-i/)
+(defun regexp-alternatives (regexps)
+  "Return the alternation of a list of regexps."
+  (mapconcat (lambda (regexp)
+               (concat "\\(?:" regexp "\\)"))
+             regexps "\\|"))
+
+(defvar non-sgr-control-sequence-regexp nil
+  "Regexp that matches non-SGR control sequences.")
+
+(setq non-sgr-control-sequence-regexp
+      (regexp-alternatives
+       '(;; icon name escape sequences
+         "\033\\][0-2];.*?\007"
+         ;; non-SGR CSI escape sequences
+         "\033\\[\\??[0-9;]*[^0-9;m]"
+         ;; noop
+         "\012\033\\[2K\033\\[1F"
+         )))
+
+(defun filter-non-sgr-control-sequences-in-region (begin end)
+  (save-excursion
+    (goto-char begin)
+    (while (re-search-forward
+            non-sgr-control-sequence-regexp end t)
+      (replace-match ""))))
+
+(defun filter-non-sgr-control-sequences-in-output (ignored)
+  (let ((start-marker
+         (or comint-last-output-start
+             (point-min-marker)))
+        (end-marker
+         (process-mark
+          (get-buffer-process (current-buffer)))))
+    (filter-non-sgr-control-sequences-in-region
+     start-marker
+     end-marker)))
+
+(add-hook 'comint-output-filter-functions
+          'filter-non-sgr-control-sequences-in-output)

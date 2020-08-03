@@ -1,0 +1,473 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("gdscript_language_server.h" include nil nil [2206 2243])
+            ("core/os/file_access.h" include nil nil [2245 2277])
+            ("core/os/os.h" include nil nil [2278 2301])
+            ("editor/editor_log.h" include nil nil [2302 2332])
+            ("editor/editor_node.h" include nil nil [2333 2364])
+            ("GDScriptLanguageServer" function
+               (:constructor-flag t
+                :parent "GDScriptLanguageServer"
+                :type ("GDScriptLanguageServer" type (:type "class") nil nil))
+                nil [2366 2782])
+            ("_notification" function
+               (:parent "GDScriptLanguageServer"
+                :arguments 
+                  ( ("p_what" variable (:type "int") (reparse-symbol arg-sub-list) [2827 2838]))                  
+                :type "void")
+                nil [2784 3409])
+            ("thread_main" function
+               (:parent "GDScriptLanguageServer"
+                :arguments 
+                  ( ("p_userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3452 3469]))                  
+                :type "void")
+                nil [3411 3688])
+            ("start" function
+               (:parent "GDScriptLanguageServer"
+                :type "void")
+                nil [3690 4249])
+            ("stop" function
+               (:parent "GDScriptLanguageServer"
+                :type "void")
+                nil [4251 4588])
+            ("register_lsp_types" function (:type "void") nil [4590 4770]))          
+      :file "gdscript_language_server.cpp"
+      :pointmax 4771
+      :fsize 4770
+      :lastmodtime '(24338 7863 191302 821000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "gdscript_language_server.h"
+      :fsize 2894
+      :lastmodtime '(24338 7691 640754 622000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("GDSCRIPT_PROTOCAL_SERVER_H" variable (:constant-flag t) nil [2249 2275])
+            ("core/io/stream_peer.h" include nil nil [2277 2309])
+            ("core/io/stream_peer_tcp.h" include nil nil [2310 2346])
+            ("core/io/tcp_server.h" include nil nil [2347 2378])
+            ("gdscript_text_document.h" include nil nil [2379 2414])
+            ("gdscript_workspace.h" include nil nil [2415 2446])
+            ("lsp.hpp" include nil nil [2447 2465])
+            ("modules/jsonrpc/jsonrpc.h" include nil nil [2466 2502])
+            ("LSP_MAX_BUFFER_SIZE" variable (:constant-flag t) nil [2512 2531])
+            ("LSP_MAX_CLIENTS" variable (:constant-flag t) nil [2548 2563])
+            ("GDScriptLanguageProtocol" type
+               (:superclasses 
+                  ( ("JSONRPC" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [2662 2670])
+                    ("LSPeer" type
+                       (:superclasses 
+                          ( ("Reference" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("connection" variable (:type ("Ref" type
+                                 (:template-specifier 
+                                    ( ("StreamPeerTCP" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2702 2732])
+                            ("req_buf" variable
+                               (:dereference 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2736 2773])
+                            ("req_pos" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [2776 2792])
+                            ("has_header" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2795 2819])
+                            ("has_content" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2822 2847])
+                            ("content_length" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [2850 2873])
+                            ("res_queue" variable (:type ("Vector" type
+                                 (:template-specifier 
+                                    ( ("CharString" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2876 2905])
+                            ("res_sent" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol classsubparts) [2908 2925])
+                            ("handle_data" function
+                               (:prototype-flag t
+                                :type ("Error" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2929 2949])
+                            ("send_data" function
+                               (:prototype-flag t
+                                :type ("Error" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2952 2970]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [2672 2974])
+                    ("LSPErrorCode" type
+                       (:members 
+                          ( ("RequestCancelled" variable
+                               (:constant-flag t
+                                :default-value (3018 3024)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2999 3024])
+                            ("ContentModified" variable
+                               (:constant-flag t
+                                :default-value (3046 3052)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3028 3052]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2977 3057])
+                    ("singleton" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("GDScriptLanguageProtocol" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3060 3103])
+                    ("clients" variable (:type ("HashMap" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("Ref" type (:template-specifier 
+                                ( ("LSPeer" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3106 3141])
+                    ("server" variable (:type ("Ref" type
+                         (:template-specifier 
+                            ( ("TCP_Server" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3143 3166])
+                    ("latest_client_id" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol classsubparts) [3168 3193])
+                    ("next_client_id" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol classsubparts) [3195 3218])
+                    ("text_document" variable (:type ("Ref" type
+                         (:template-specifier 
+                            ( ("GDScriptTextDocument" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3221 3261])
+                    ("workspace" variable (:type ("Ref" type
+                         (:template-specifier 
+                            ( ("GDScriptWorkspace" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3263 3296])
+                    ("on_client_connected" function
+                       (:prototype-flag t
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3299 3327])
+                    ("on_client_disconnected" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p_client_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3357 3380]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3329 3381])
+                    ("process_message" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p_text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3407 3428]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3384 3429])
+                    ("format_output" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p_text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3452 3473]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3431 3474])
+                    ("_initialized" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3477 3503])
+                    ("protected" label nil (reparse-symbol classsubparts) [3505 3515])
+                    ("_bind_methods" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3517 3545])
+                    ("initialize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p_params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Dictionary" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3570 3597]))                          
+                        :type ("Dictionary" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3548 3598])
+                    ("initialized" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p_params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Variant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3617 3641]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3600 3642])
+                    ("public" label nil (reparse-symbol classsubparts) [3644 3651])
+                    ("get_singleton" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("GDScriptLanguageProtocol" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3668 3738])
+                    ("get_workspace" function (:type ("Ref" type
+                         (:template-specifier 
+                            ( ("GDScriptWorkspace" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3755 3815])
+                    ("get_text_document" function (:type ("Ref" type
+                         (:template-specifier 
+                            ( ("GDScriptTextDocument" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3832 3903])
+                    ("is_initialized" function
+                       (:methodconst-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3920 3972])
+                    ("poll" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3975 3987])
+                    ("start" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p_port" variable (:type "int") (reparse-symbol arg-sub-list) [4001 4012])
+                            ("p_bind_ip" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IP_Address" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4013 4041]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3989 4042])
+                    ("stop" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4044 4056])
+                    ("notify_client" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p_method" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4078 4101])
+                            ("p_params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "Variant()"
+                                :type ("Variant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4102 4137])
+                            ("p_client_id" variable
+                               (:default-value "-1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [4139 4159]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4059 4161])
+                    ("is_smart_resolve_enabled" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4164 4202])
+                    ("is_goto_native_symbols_enabled" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4204 4248])
+                    ("GDScriptLanguageProtocol" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("GDScriptLanguageProtocol" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4251 4278]))                  
+                :type "class")
+                nil [2567 4281]))          
+      :file "gdscript_language_protocol.h"
+      :pointmax 4290
+      :fsize 4289
+      :lastmodtime '(24338 7863 191302 821000)
+      :unmatched-syntax '((symbol 3905 . 3919) (symbol 3817 . 3831) (symbol 3740 . 3754) (symbol 3653 . 3667) (semantic-list 2625 . 2660) (symbol 2618 . 2625))
+      :lexical-table 
+        '(("LSP_MAX_CLIENTS" . ((number "8" 2564 . 2565)))
+          ("GDSCRIPT_PROTOCAL_SERVER_H")
+          ("LSP_MAX_BUFFER_SIZE" . ((number "4194304" 2532 . 2539)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "gdscript_text_document.h"
+      :fsize 3715
+      :lastmodtime '(24338 7691 640754 622000))
+    (semanticdb-table "semanticdb-table"
+      :file "gdscript_workspace.h"
+      :fsize 4580
+      :lastmodtime '(24338 7691 640754 622000))
+    (semanticdb-table "semanticdb-table"
+      :file "lsp.hpp"
+      :fsize 46481
+      :lastmodtime '(24338 7863 191302 821000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("gdscript_language_protocol.h" include nil nil [2206 2245])
+            ("core/io/json.h" include nil nil [2247 2272])
+            ("core/os/copymem.h" include nil nil [2273 2301])
+            ("core/project_settings.h" include nil nil [2302 2336])
+            ("editor/editor_log.h" include nil nil [2337 2367])
+            ("editor/editor_node.h" include nil nil [2368 2399])
+            ("GDScriptLanguageProtocol::singleton" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("GDScriptLanguageProtocol" type (:type "class") nil nil))
+                nil [2401 2470])
+            ("handle_data" function
+               (:parent "GDScriptLanguageProtocol::LSPeer"
+                :type ("Error" type (:type "class") nil nil))
+                nil [2472 4055])
+            ("send_data" function
+               (:parent "GDScriptLanguageProtocol::LSPeer"
+                :type ("Error" type (:type "class") nil nil))
+                nil [4057 4531])
+            ("on_client_connected" function
+               (:parent "GDScriptLanguageProtocol"
+                :type ("Error" type (:type "class") nil nil))
+                nil [4533 4960])
+            ("on_client_disconnected" function
+               (:parent "GDScriptLanguageProtocol"
+                :arguments 
+                  ( ("p_client_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5016 5039]))                  
+                :type "void")
+                nil [4962 5153])
+            ("process_message" function
+               (:parent "GDScriptLanguageProtocol"
+                :arguments 
+                  ( ("p_text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5204 5225]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [5155 5343])
+            ("format_output" function
+               (:parent "GDScriptLanguageProtocol"
+                :arguments 
+                  ( ("p_text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5392 5413]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [5345 5595])
+            ("_bind_methods" function
+               (:parent "GDScriptLanguageProtocol"
+                :type "void")
+                nil [5597 6598])
+            ("initialize" function
+               (:parent "GDScriptLanguageProtocol"
+                :arguments 
+                  ( ("p_params" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Dictionary" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6648 6675]))                  
+                :type ("Dictionary" type (:type "class") nil nil))
+                nil [6600 7783])
+            ("initialized" function
+               (:parent "GDScriptLanguageProtocol"
+                :arguments 
+                  ( ("p_params" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Variant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7828 7852]))                  
+                :type "void")
+                nil [7785 8379])
+            ("poll" function
+               (:parent "GDScriptLanguageProtocol"
+                :type "void")
+                nil [8381 9151])
+            ("start" function
+               (:parent "GDScriptLanguageProtocol"
+                :arguments 
+                  ( ("p_port" variable (:type "int") (reparse-symbol arg-sub-list) [9191 9202])
+                    ("p_bind_ip" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IP_Address" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9203 9231]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [9153 9278])
+            ("stop" function
+               (:parent "GDScriptLanguageProtocol"
+                :type "void")
+                nil [9280 9483])
+            ("notify_client" function
+               (:parent "GDScriptLanguageProtocol"
+                :arguments 
+                  ( ("p_method" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9530 9553])
+                    ("p_params" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Variant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9554 9578])
+                    ("p_client_id" variable (:type "int") (reparse-symbol arg-sub-list) [9579 9595]))                  
+                :type "void")
+                nil [9485 10055])
+            ("is_smart_resolve_enabled" function
+               (:methodconst-flag t
+                :parent "GDScriptLanguageProtocol"
+                :type "bool")
+                nil [10057 10199])
+            ("is_goto_native_symbols_enabled" function
+               (:methodconst-flag t
+                :parent "GDScriptLanguageProtocol"
+                :type "bool")
+                nil [10201 10358])
+            ("GDScriptLanguageProtocol" function
+               (:constructor-flag t
+                :parent "GDScriptLanguageProtocol"
+                :type ("GDScriptLanguageProtocol" type (:type "class") nil nil))
+                nil [10360 10721]))          
+      :file "gdscript_language_protocol.cpp"
+      :pointmax 10722
+      :fsize 10721
+      :lastmodtime '(24338 7863 187302 761000)
+      :unmatched-syntax nil))
+  :file "!home!smonroe!Godot!godot!modules!gdscript!language_server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -6,7 +6,7 @@
 ;    By: smonroe <smonroe@student.42.fr>            +#+  +:+       +#+         ;
 ;                                                 +#+#+#+#+#+   +#+            ;
 ;    Created: 2018/10/08 21:39:29 by smonroe           #+#    #+#              ;
-;    Updated: 2019/03/25 17:57:02 by smonroe          ###   ########.fr        ;
+;    Updated: 2020/03/31 11:19:49 by smonroe          ###   ########.fr        ;
 ;                                                                              ;
 ;******************************************************************************;
 
@@ -16,9 +16,9 @@
 (defun tabber ()
 	"Tab key override since smart indentation is dumb"
 	(interactive)
-	(insert "\t")
+	(insert "  ")
 )
-(global-set-key (kbd "TAB") 'tabber)
+;(global-set-key (kbd "TAB") 'tabber)
 
 ;Fix clear in eshell
 (defun eshell/clear ()
@@ -35,7 +35,7 @@
 	(insert ".globl _start\n\n")
 	(insert "_start:\n")
 )
-(global-set-key (kbd "C-c a") 'asm-header)
+;(global-set-key (kbd "C-c a") 'asm-header)
 
 ;as function declaration and stack management junk insert
 (defun	asm-func (name)
@@ -49,7 +49,7 @@
 	(insert "\tpopl\t%ebp\t\t\t#restore base pointer from stack\n")
 	(insert "\tret\t\t\t\t\t\t#return eax to caller\n")
 )
-(global-set-key (kbd "C-c f") 'asm-func)
+;(global-set-key (kbd "C-c f") 'asm-func)
 
 ;Makefile autogen
 (defun mymakefile ()
@@ -65,7 +65,7 @@
 	(insert "re: fclean all\n\n")
 	(insert "fsan:\n\t$(CC) $(SRC) -o $(NAME) -g -fsanitize=address\n\n")
 )
-(global-set-key (kbd "C-c m") 'mymakefile)
+;(global-set-key (kbd "C-c m") 'mymakefile)
 
 ;Coplien form for c++ class files
 (defun hpp (name)
@@ -99,7 +99,7 @@
 	(if (equal (file-name-extension(buffer-file-name)) "cpp")
 		(cpp name))
 )
-(global-set-key (kbd "C-c c") 'class)
+;(global-set-key (kbd "C-c c") 'class)
 
 ;Coplien form for nested exceptions in classes
 (defun hppexc (name nest)
@@ -132,4 +132,4 @@
 	(if (equal (file-name-extension(buffer-file-name)) "cpp")
 		(cppexc name nest))
 )
-(global-set-key (kbd "C-c e") 'eclass)
+;(global-set-key (kbd "C-c e") 'eclass)

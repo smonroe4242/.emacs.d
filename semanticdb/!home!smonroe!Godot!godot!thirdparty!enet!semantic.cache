@@ -1,0 +1,762 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("core/io/dtls_server.h" include nil nil [2269 2301])
+            ("core/io/ip.h" include nil nil [2302 2325])
+            ("core/io/net_socket.h" include nil nil [2326 2357])
+            ("core/io/packet_peer_dtls.h" include nil nil [2358 2395])
+            ("core/io/udp_server.h" include nil nil [2396 2427])
+            ("core/os/os.h" include nil nil [2428 2451])
+            ("enet/enet.h" include nil nil [2517 2539])
+            ("ENetGodotSocket" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2608 2615])
+                    ("bind" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_ip" variable (:type ("IP_Address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2636 2652])
+                            ("p_port" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2653 2669]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2617 2674])
+                    ("sendto" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_buffer" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2697 2721])
+                            ("p_len" variable (:type "int") (reparse-symbol arg-sub-list) [2722 2732])
+                            ("r_sent" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2733 2745])
+                            ("p_ip" variable (:type ("IP_Address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2746 2762])
+                            ("p_port" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2763 2779]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2676 2784])
+                    ("recvfrom" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_buffer" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2809 2827])
+                            ("p_len" variable (:type "int") (reparse-symbol arg-sub-list) [2828 2838])
+                            ("r_read" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2839 2851])
+                            ("r_ip" variable
+                               (:reference 1
+                                :type ("IP_Address" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2852 2869])
+                            ("r_port" variable
+                               (:reference 1
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2870 2887]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2786 2892])
+                    ("set_option" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_option" variable (:type ("ENetSocketOption" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2917 2943])
+                            ("p_value" variable (:type "int") (reparse-symbol arg-sub-list) [2944 2956]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2894 2961])
+                    ("close" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2963 2988])
+                    ("set_refuse_new_connections" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_refuse" variable (:type "bool") (reparse-symbol arg-sub-list) [3030 3044]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2990 3079])
+                    ("ENetGodotSocket" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3081 3109]))                  
+                :type "class")
+                nil [2583 3113])
+            ("ENetDTLSClient" type
+               (:prototype t
+                :type "class")
+                nil [3115 3136])
+            ("ENetDTLSServer" type
+               (:prototype t
+                :type "class")
+                nil [3137 3158])
+            ("ENetUDP" type
+               (:superclasses 
+                  ( ("ENetGodotSocket" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("ENetDTLSClient" friend nil (reparse-symbol classsubparts) [3227 3254])
+                    ("ENetDTLSServer" friend nil (reparse-symbol classsubparts) [3257 3284])
+                    ("private" label nil (reparse-symbol classsubparts) [3287 3295])
+                    ("sock" variable (:type ("Ref" type
+                         (:template-specifier 
+                            ( ("NetSocket" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3297 3317])
+                    ("address" variable (:type ("IP_Address" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3319 3338])
+                    ("port" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3340 3354])
+                    ("bound" variable (:type "bool") (reparse-symbol classsubparts) [3356 3367])
+                    ("public" label nil (reparse-symbol classsubparts) [3369 3376])
+                    ("ENetUDP" function
+                       (:constructor-flag t
+                        :type ("ENetUDP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3378 3534])
+                    ("ENetUDP" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3537 3569])
+                    ("bind" function
+                       (:arguments 
+                          ( ("p_ip" variable (:type ("IP_Address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3583 3599])
+                            ("p_port" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3600 3616]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3572 3708])
+                    ("sendto" function
+                       (:arguments 
+                          ( ("p_buffer" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3724 3748])
+                            ("p_len" variable (:type "int") (reparse-symbol arg-sub-list) [3749 3759])
+                            ("r_sent" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3760 3772])
+                            ("p_ip" variable (:type ("IP_Address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3773 3789])
+                            ("p_port" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3790 3806]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3711 3873])
+                    ("recvfrom" function
+                       (:arguments 
+                          ( ("p_buffer" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3891 3909])
+                            ("p_len" variable (:type "int") (reparse-symbol arg-sub-list) [3910 3920])
+                            ("r_read" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3921 3933])
+                            ("r_ip" variable
+                               (:reference 1
+                                :type ("IP_Address" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3934 3951])
+                            ("r_port" variable
+                               (:reference 1
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3952 3969]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3876 4124])
+                    ("set_option" function
+                       (:arguments 
+                          ( ("p_option" variable (:type ("ENetSocketOption" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4142 4168])
+                            ("p_value" variable (:type "int") (reparse-symbol arg-sub-list) [4169 4181]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4127 4943])
+                    ("close" function (:type "void") (reparse-symbol classsubparts) [4946 4980]))                  
+                :type "class")
+                nil [3184 4983])
+            ("ENetDTLSClient" type
+               (:superclasses 
+                  ( ("ENetGodotSocket" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("connected" variable (:type "bool") (reparse-symbol classsubparts) [5066 5081])
+                    ("udp" variable (:type ("Ref" type
+                         (:template-specifier 
+                            ( ("PacketPeerUDP" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5083 5106])
+                    ("dtls" variable (:type ("Ref" type
+                         (:template-specifier 
+                            ( ("PacketPeerDTLS" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5108 5133])
+                    ("verify" variable (:type "bool") (reparse-symbol classsubparts) [5135 5147])
+                    ("for_hostname" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5149 5169])
+                    ("cert" variable (:type ("Ref" type
+                         (:template-specifier 
+                            ( ("X509Certificate" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5171 5197])
+                    ("public" label nil (reparse-symbol classsubparts) [5199 5206])
+                    ("ENetDTLSClient" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("p_base" variable
+                               (:pointer 1
+                                :type ("ENetUDP" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5223 5239])
+                            ("p_cert" variable (:type ("Ref" type
+                                 (:template-specifier 
+                                    ( ("X509Certificate" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [5240 5268])
+                            ("p_verify" variable (:type "bool") (reparse-symbol arg-sub-list) [5269 5283])
+                            ("p_for_hostname" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5284 5306]))                          
+                        :type ("ENetDTLSClient" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5208 5563])
+                    ("ENetDTLSClient" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5566 5599])
+                    ("bind" function
+                       (:arguments 
+                          ( ("p_ip" variable (:type ("IP_Address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5613 5629])
+                            ("p_port" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5630 5646]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5602 5687])
+                    ("sendto" function
+                       (:arguments 
+                          ( ("p_buffer" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5703 5727])
+                            ("p_len" variable (:type "int") (reparse-symbol arg-sub-list) [5728 5738])
+                            ("r_sent" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5739 5751])
+                            ("p_ip" variable (:type ("IP_Address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5752 5768])
+                            ("p_port" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5769 5785]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5690 6180])
+                    ("recvfrom" function
+                       (:arguments 
+                          ( ("p_buffer" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6198 6216])
+                            ("p_len" variable (:type "int") (reparse-symbol arg-sub-list) [6217 6227])
+                            ("r_read" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [6228 6240])
+                            ("r_ip" variable
+                               (:reference 1
+                                :type ("IP_Address" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6241 6258])
+                            ("r_port" variable
+                               (:reference 1
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6259 6276]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6183 6867])
+                    ("set_option" function
+                       (:arguments 
+                          ( ("p_option" variable (:type ("ENetSocketOption" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6885 6911])
+                            ("p_value" variable (:type "int") (reparse-symbol arg-sub-list) [6912 6924]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6870 6942])
+                    ("close" function (:type "void") (reparse-symbol classsubparts) [6945 7010]))                  
+                :type "class")
+                nil [5016 7013])
+            ("ENetDTLSServer" type
+               (:superclasses 
+                  ( ("ENetGodotSocket" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("server" variable (:type ("Ref" type
+                         (:template-specifier 
+                            ( ("DTLSServer" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [7097 7120])
+                    ("udp_server" variable (:type ("Ref" type
+                         (:template-specifier 
+                            ( ("UDPServer" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [7122 7148])
+                    ("peers" variable (:type ("Map" type
+                         (:template-specifier 
+                            ( ("String" type nil nil nil)
+                              ("Ref" type (:template-specifier 
+                                ( ("PacketPeerDTLS" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [7150 7190])
+                    ("last_service" variable (:type "int") (reparse-symbol classsubparts) [7192 7209])
+                    ("public" label nil (reparse-symbol classsubparts) [7211 7218])
+                    ("ENetDTLSServer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("p_base" variable
+                               (:pointer 1
+                                :type ("ENetUDP" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7235 7251])
+                            ("p_key" variable (:type ("Ref" type
+                                 (:template-specifier 
+                                    ( ("CryptoKey" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [7252 7273])
+                            ("p_cert" variable (:type ("Ref" type
+                                 (:template-specifier 
+                                    ( ("X509Certificate" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [7274 7302]))                          
+                        :type ("ENetDTLSServer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7220 7520])
+                    ("ENetDTLSServer" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7523 7556])
+                    ("set_refuse_new_connections" function
+                       (:arguments 
+                          ( ("p_refuse" variable (:type "bool") (reparse-symbol arg-sub-list) [7591 7605]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7559 7672])
+                    ("bind" function
+                       (:arguments 
+                          ( ("p_ip" variable (:type ("IP_Address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7686 7702])
+                            ("p_port" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7703 7719]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7675 7767])
+                    ("sendto" function
+                       (:arguments 
+                          ( ("p_buffer" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7783 7807])
+                            ("p_len" variable (:type "int") (reparse-symbol arg-sub-list) [7808 7818])
+                            ("r_sent" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [7819 7831])
+                            ("p_ip" variable (:type ("IP_Address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7832 7848])
+                            ("p_port" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7849 7865]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7770 8179])
+                    ("recvfrom" function
+                       (:arguments 
+                          ( ("p_buffer" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8197 8215])
+                            ("p_len" variable (:type "int") (reparse-symbol arg-sub-list) [8216 8226])
+                            ("r_read" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [8227 8239])
+                            ("r_ip" variable
+                               (:reference 1
+                                :type ("IP_Address" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8240 8257])
+                            ("r_port" variable
+                               (:reference 1
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8258 8275]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8182 10040])
+                    ("set_option" function
+                       (:arguments 
+                          ( ("p_option" variable (:type ("ENetSocketOption" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10058 10084])
+                            ("p_value" variable (:type "int") (reparse-symbol arg-sub-list) [10085 10097]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [10043 10115])
+                    ("close" function (:type "void") (reparse-symbol classsubparts) [10118 10323]))                  
+                :type "class")
+                nil [7047 10326])
+            ("timeBase" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("enet_uint32" type (:type "class") nil nil))
+                nil [10328 10360])
+            ("enet_initialize" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10382 10387]))                  
+                :type "int")
+                nil [10362 10403])
+            ("enet_deinitialize" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10428 10433]))                  
+                :type "void")
+                nil [10405 10437])
+            ("enet_host_random_seed" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10473 10478]))                  
+                :type ("enet_uint32" type (:type "class") nil nil))
+                nil [10439 10542])
+            ("enet_time_get" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10570 10575]))                  
+                :type ("enet_uint32" type (:type "class") nil nil))
+                nil [10544 10638])
+            ("enet_time_set" function
+               (:arguments 
+                  ( ("newTimeBase" variable (:type ("enet_uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10659 10683]))                  
+                :type "void")
+                nil [10640 10753])
+            ("enet_address_set_host" function
+               (:arguments 
+                  ( ("address" variable
+                       (:pointer 1
+                        :type ("ENetAddress" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10781 10802])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10803 10820]))                  
+                :type "int")
+                nil [10755 10987])
+            ("enet_address_set_ip" function
+               (:arguments 
+                  ( ("address" variable
+                       (:pointer 1
+                        :type ("ENetAddress" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11014 11035])
+                    ("ip" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11036 11054])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11055 11067]))                  
+                :type "void")
+                nil [10989 11170])
+            ("enet_address_get_host_ip" function
+               (:arguments 
+                  ( ("address" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ENetAddress" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11201 11228])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11229 11240])
+                    ("nameLength" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11241 11259]))                  
+                :type "int")
+                nil [11172 11276])
+            ("enet_address_get_host" function
+               (:arguments 
+                  ( ("address" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ENetAddress" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11304 11331])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11332 11343])
+                    ("nameLength" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11344 11362]))                  
+                :type "int")
+                nil [11278 11379])
+            ("enet_socket_create" function
+               (:arguments 
+                  ( ("type" variable (:type ("ENetSocketType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11411 11431]))                  
+                :type ("ENetSocket" type (:type "class") nil nil))
+                nil [11381 11489])
+            ("enet_host_dtls_server_setup" function
+               (:arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type ("ENetHost" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11524 11539])
+                    ("p_key" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11540 11552])
+                    ("p_cert" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11553 11566]))                  
+                :type "void")
+                nil [11491 11761])
+            ("enet_host_dtls_client_setup" function
+               (:arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type ("ENetHost" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11796 11811])
+                    ("p_cert" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11812 11825])
+                    ("p_verify" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11826 11843])
+                    ("p_for_hostname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11844 11871]))                  
+                :type "void")
+                nil [11763 12064])
+            ("enet_host_refuse_new_connections" function
+               (:arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type ("ENetHost" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12104 12119])
+                    ("p_refuse" variable (:type "int") (reparse-symbol arg-sub-list) [12120 12133]))                  
+                :type "void")
+                nil [12066 12242])
+            ("enet_socket_bind" function
+               (:arguments 
+                  ( ("socket" variable (:type ("ENetSocket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12265 12283])
+                    ("address" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ENetAddress" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12284 12311]))                  
+                :type "int")
+                nil [12244 12549])
+            ("enet_socket_destroy" function
+               (:arguments 
+                  ( ("socket" variable (:type ("ENetSocket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12576 12594]))                  
+                :type "void")
+                nil [12551 12684])
+            ("enet_socket_send" function
+               (:arguments 
+                  ( ("socket" variable (:type ("ENetSocket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12707 12725])
+                    ("address" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ENetAddress" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12726 12753])
+                    ("buffers" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ENetBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12754 12780])
+                    ("bufferCount" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12781 12800]))                  
+                :type "int")
+                nil [12686 13568])
+            ("enet_socket_receive" function
+               (:arguments 
+                  ( ("socket" variable (:type ("ENetSocket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13594 13612])
+                    ("address" variable
+                       (:pointer 1
+                        :type ("ENetAddress" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13613 13634])
+                    ("buffers" variable
+                       (:pointer 1
+                        :type ("ENetBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13635 13655])
+                    ("bufferCount" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13656 13675]))                  
+                :type "int")
+                nil [13570 14037])
+            ("enet_socket_wait" function
+               (:arguments 
+                  ( ("socket" variable (:type ("ENetSocket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14079 14097])
+                    ("condition" variable
+                       (:pointer 1
+                        :type ("enet_uint32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14098 14121])
+                    ("timeout" variable (:type ("enet_uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14122 14142]))                  
+                :type "int")
+                nil [14058 14187])
+            ("enet_socket_get_address" function
+               (:arguments 
+                  ( ("socket" variable (:type ("ENetSocket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14217 14235])
+                    ("address" variable
+                       (:pointer 1
+                        :type ("ENetAddress" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14236 14257]))                  
+                :type "int")
+                nil [14189 14303])
+            ("enet_socketset_select" function
+               (:arguments 
+                  ( ("maxSocket" variable (:type ("ENetSocket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14331 14352])
+                    ("readSet" variable
+                       (:pointer 1
+                        :type ("ENetSocketSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14353 14376])
+                    ("writeSet" variable
+                       (:pointer 1
+                        :type ("ENetSocketSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14377 14401])
+                    ("timeout" variable (:type ("enet_uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14402 14422]))                  
+                :type "int")
+                nil [14305 14439])
+            ("enet_socket_listen" function
+               (:arguments 
+                  ( ("socket" variable (:type ("ENetSocket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14464 14482])
+                    ("backlog" variable (:type "int") (reparse-symbol arg-sub-list) [14483 14495]))                  
+                :type "int")
+                nil [14441 14512])
+            ("enet_socket_set_option" function
+               (:arguments 
+                  ( ("socket" variable (:type ("ENetSocket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14541 14559])
+                    ("option" variable (:type ("ENetSocketOption" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14560 14584])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [14585 14595]))                  
+                :type "int")
+                nil [14514 14693])
+            ("enet_socket_get_option" function
+               (:arguments 
+                  ( ("socket" variable (:type ("ENetSocket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14722 14740])
+                    ("option" variable (:type ("ENetSocketOption" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14741 14765])
+                    ("value" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14766 14777]))                  
+                :type "int")
+                nil [14695 14794])
+            ("enet_socket_connect" function
+               (:arguments 
+                  ( ("socket" variable (:type ("ENetSocket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14820 14838])
+                    ("address" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ENetAddress" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14839 14866]))                  
+                :type "int")
+                nil [14796 14883])
+            ("enet_socket_accept" function
+               (:arguments 
+                  ( ("socket" variable (:type ("ENetSocket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14915 14933])
+                    ("address" variable
+                       (:pointer 1
+                        :type ("ENetAddress" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14934 14955]))                  
+                :type ("ENetSocket" type (:type "class") nil nil))
+                nil [14885 14974])
+            ("enet_socket_shutdown" function
+               (:arguments 
+                  ( ("socket" variable (:type ("ENetSocket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15001 15019])
+                    ("how" variable (:type ("ENetSocketShutdown" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15020 15043]))                  
+                :type "int")
+                nil [14976 15060]))          
+      :file "godot.cpp"
+      :pointmax 15061
+      :fsize 15060
+      :lastmodtime '(24338 7863 295304 366000)
+      :unmatched-syntax '((punctuation 3284 . 3285) (punctuation 3254 . 3255) (punctuation 3109 . 3110)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ENET_BUILDING_LIB" variable (:constant-flag t) nil [70 87])
+            ("string.h" include (:system-flag t) nil [90 109])
+            ("enet/enet.h" include nil nil [110 132])
+            ("enet_host_create" function
+               (:pointer 1
+                :arguments 
+                  ( ("address" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ENetAddress" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1235 1263])
+                    ("peerCount" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1264 1281])
+                    ("channelLimit" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1282 1302])
+                    ("incomingBandwidth" variable (:type ("enet_uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1303 1333])
+                    ("outgoingBandwidth" variable (:type ("enet_uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1334 1364]))                  
+                :type ("ENetHost" type (:type "class") nil nil))
+                nil [1206 5161])
+            ("enet_host_destroy" function
+               (:arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type ("ENetHost" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5297 5313]))                  
+                :type "void")
+                nil [5273 5795])
+            ("enet_host_connect" function
+               (:pointer 1
+                :arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type ("ENetHost" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6320 6336])
+                    ("address" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ENetAddress" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6337 6365])
+                    ("channelCount" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6366 6386])
+                    ("data" variable (:type ("enet_uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6387 6404]))                  
+                :type ("ENetPeer" type (:type "class") nil nil))
+                nil [6290 9968])
+            ("enet_host_broadcast" function
+               (:arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type ("ENetHost" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10212 10228])
+                    ("channelID" variable (:type ("enet_uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10229 10250])
+                    ("packet" variable
+                       (:pointer 1
+                        :type ("ENetPacket" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10251 10271]))                  
+                :type "void")
+                nil [10186 10653])
+            ("enet_host_compress" function
+               (:arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type ("ENetHost" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10929 10945])
+                    ("compressor" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ENetCompressor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10946 10980]))                  
+                :type "void")
+                nil [10904 11237])
+            ("enet_host_channel_limit" function
+               (:arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type ("ENetHost" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11507 11523])
+                    ("channelLimit" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11524 11544]))                  
+                :type "void")
+                nil [11477 11853])
+            ("enet_host_bandwidth_limit" function
+               (:arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type ("ENetHost" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12202 12218])
+                    ("incomingBandwidth" variable (:type ("enet_uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12219 12249])
+                    ("outgoingBandwidth" variable (:type ("enet_uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12250 12280]))                  
+                :type "void")
+                nil [12170 12430])
+            ("enet_host_bandwidth_throttle" function
+               (:arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type ("ENetHost" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12467 12483]))                  
+                :type "void")
+                nil [12432 18142]))          
+      :file "host.c"
+      :pointmax 18158
+      :fsize 18157
+      :lastmodtime '(24338 7691 820757 295000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ENET_BUILDING_LIB" . ((number "1" 88 . 89)))
+          )
+))
+  :file "!home!smonroe!Godot!godot!thirdparty!enet!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

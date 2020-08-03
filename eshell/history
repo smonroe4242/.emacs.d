@@ -1,0 +1,20 @@
+git status
+git stash list
+git stash bekim
+git stash save bekim
+git stash list
+git stash list
+git stash save bekim
+git stash pop bekim
+git stash pop
+cd ..
+ls
+git diff devel-comment-reply constants.ts 
+ls
+mv reaction.service.spec.ts vote.service.spec.ts
+mv reaction.service.ts vote.service.ts
+mv reaction.schema.ts vote.schema.ts
+tmux attach
+tmux
+git status
+git diff

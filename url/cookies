@@ -1,0 +1,14 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '((".docs.godotengine.org"
+	[url-cookie "__cfduid" "db988e3abfd92094438ed93ca1670bb021596154459" "Sun, 30-Aug-20 00:14:19 GMT" "/" ".docs.godotengine.org" nil]))
+)
+(setq url-cookie-secure-storage
+ 'nil)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

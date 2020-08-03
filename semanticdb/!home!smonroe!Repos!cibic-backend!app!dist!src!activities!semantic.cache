@@ -1,0 +1,17 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags 
+        '( ("ActivityType" variable nil nil [1140 1157]))          
+      :file "activity.entity.js"
+      :pointmax 4070
+      :fsize 4069
+      :lastmodtime '(24235 43569 846627 780000)
+      :unmatched-syntax '((VARIABLE 3955 . 3963) (PAREN_BLOCK 3976 . 4004) (VARIABLE 3802 . 3812) (PAREN_BLOCK 3812 . 3953) (VARIABLE 3665 . 3675) (PAREN_BLOCK 3675 . 3800) (VARIABLE 3504 . 3514) (PAREN_BLOCK 3514 . 3663) (VARIABLE 3355 . 3365) (PAREN_BLOCK 3365 . 3502) (VARIABLE 3181 . 3191) (PAREN_BLOCK 3191 . 3353) (VARIABLE 3035 . 3045) (PAREN_BLOCK 3045 . 3179) (VARIABLE 2930 . 2940) (PAREN_BLOCK 2940 . 3033) (VARIABLE 2824 . 2834) (PAREN_BLOCK 2834 . 2928) (VARIABLE 2704 . 2714) (PAREN_BLOCK 2714 . 2822) (VARIABLE 2563 . 2573) (PAREN_BLOCK 2573 . 2702) (VARIABLE 2418 . 2428) (PAREN_BLOCK 2428 . 2561) (VARIABLE 2272 . 2282) (PAREN_BLOCK 2282 . 2416) (VARIABLE 2102 . 2112) (PAREN_BLOCK 2112 . 2270) (VARIABLE 1960 . 1970) (PAREN_BLOCK 1970 . 2100) (VARIABLE 1813 . 1823) (PAREN_BLOCK 1823 . 1958) (VARIABLE 1697 . 1707) (PAREN_BLOCK 1707 . 1811) (VARIABLE 1559 . 1569) (PAREN_BLOCK 1569 . 1695) (VARIABLE 1405 . 1408) (VARIABLE 1409 . 1417) (VARIABLE 1426 . 1434) (BRACE_BLOCK 1435 . 1438) (SEMICOLON 1438 . 1439) (VARIABLE 1440 . 1450) (PAREN_BLOCK 1450 . 1557) (PAREN_BLOCK 1366 . 1403) (PAREN_BLOCK 1158 . 1366) (PAREN_BLOCK 628 . 634) (LOGICAL_OR 616 . 618) (SEMICOLON 571 . 572) (VAR 573 . 576) (PAREN_BLOCK 590 . 615) (PAREN_BLOCK 56 . 87) (LOGICAL_OR 44 . 46) (PAREN_BLOCK 18 . 43))))
+  :file "!home!smonroe!Repos!cibic-backend!app!dist!src!activities!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

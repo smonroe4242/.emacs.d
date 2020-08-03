@@ -1,0 +1,17 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags 
+        '( ("bootstrap" function nil nil [845 1044]))          
+      :file "main.js"
+      :pointmax 1090
+      :fsize 992
+      :lastmodtime '(24236 36888 894102 106000)
+      :unmatched-syntax '((VARIABLE 1045 . 1054) (PAREN_BLOCK 1054 . 1056) (VARIABLE 799 . 804) (VARIABLE 805 . 817) (PAREN_BLOCK 827 . 843) (VARIABLE 759 . 764) (VARIABLE 765 . 771) (PAREN_BLOCK 781 . 797) (SEMICOLON 694 . 695) (VARIABLE 696 . 702) (PAREN_BLOCK 717 . 757) (PAREN_BLOCK 68 . 103) (LOGICAL_OR 56 . 58) (VAR 15 . 18) (PAREN_BLOCK 31 . 55))))
+  :file "!home!smonroe!Repos!cibic-backend!app!dist!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

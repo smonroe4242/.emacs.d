@@ -1,0 +1,18 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "cibic-mobile-firebase-adminsdk-o0s15-1325cddf44.json"
+      :pointmax 2338
+      :fsize 2337
+      :lastmodtime '(24271 5405 101561 662000)
+      :unmatched-syntax nil))
+  :file "!home!smonroe!cibic-backend!app!src!fcm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

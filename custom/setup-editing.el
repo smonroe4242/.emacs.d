@@ -46,9 +46,9 @@
 
 ;; Package: undo-tree
 ;; GROUP: Editing -> Undo -> Undo Tree
-(use-package undo-tree
-  :init
-  (global-undo-tree-mode 1))
+;(use-package undo-tree
+;  :init
+;  (global-undo-tree-mode 1))
 
 
 ;; Package: yasnippet
@@ -59,10 +59,10 @@
   :init
   (add-hook 'prog-mode-hook 'yas-minor-mode))
 
-;; Package: clean-aindent-mode
-(use-package clean-aindent-mode
-  :init
-  (add-hook 'prog-mode-hook 'clean-aindent-mode))
+;; Package: clean-aindent-mode CANNOT BE FOUND
+;;(use-package clean-aindent-mode
+;;  :init
+;;  (add-hook 'prog-mode-hook 'clean-aindent-mode))
 
 ;; Package: dtrt-indent
 (use-package dtrt-indent

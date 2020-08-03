@@ -1,0 +1,64 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "package-lock.json"
+      :pointmax 419869
+      :fsize 419868
+      :lastmodtime '(24237 48342 235834 568000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "tsconfig.build.json"
+      :pointmax 98
+      :fsize 97
+      :lastmodtime '(24230 51275 568007 337000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "package.json"
+      :pointmax 2708
+      :fsize 2707
+      :lastmodtime '(24238 13911 925666 205000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "nest-cli.json"
+      :pointmax 65
+      :fsize 64
+      :lastmodtime '(24230 51275 560007 185000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "tslint.json"
+      :pointmax 427
+      :fsize 426
+      :lastmodtime '(24230 51275 568007 337000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "tsconfig.json"
+      :pointmax 501
+      :fsize 500
+      :lastmodtime '(24237 57166 704607 281000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "ormconfig.json"
+      :pointmax 439
+      :fsize 438
+      :lastmodtime '(24239 12446 601576 416000)
+      :unmatched-syntax nil))
+  :file "!home!smonroe!Repos!cibic-backend!app!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

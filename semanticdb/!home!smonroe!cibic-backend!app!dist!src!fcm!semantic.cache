@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "fcm.service.js"
+      :pointmax 4566
+      :fsize 4565
+      :lastmodtime '(24271 2499 426059 258000)
+      :unmatched-syntax '((PAREN_BLOCK 4490 . 4492) (VARIABLE 2773 . 2776) (VARIABLE 2777 . 2787) (PAREN_BLOCK 2790 . 4490) (VARIABLE 2710 . 2715) (VARIABLE 2716 . 2729) (PAREN_BLOCK 2744 . 2771) (VARIABLE 2658 . 2663) (VARIABLE 2664 . 2679) (PAREN_BLOCK 2689 . 2708) (VARIABLE 2614 . 2619) (VARIABLE 2620 . 2628) (PAREN_BLOCK 2638 . 2656) (VARIABLE 2490 . 2497) (VARIABLE 2519 . 2524) (VARIABLE 2525 . 2547) (PAREN_BLOCK 2557 . 2612) (SEMICOLON 2425 . 2426) (VARIABLE 2427 . 2433) (PAREN_BLOCK 2448 . 2488) (PAREN_BLOCK 1799 . 1834) (LOGICAL_OR 1787 . 1789) (SEMICOLON 1744 . 1745) (VAR 1746 . 1749) (PAREN_BLOCK 1762 . 1786) (PAREN_BLOCK 1643 . 1666) (LOGICAL_OR 1631 . 1633) (SEMICOLON 1592 . 1593) (VAR 1594 . 1597) (PAREN_BLOCK 1608 . 1630) (PAREN_BLOCK 1472 . 1478) (LOGICAL_OR 1460 . 1462) (SEMICOLON 1415 . 1416) (VAR 1417 . 1420) (PAREN_BLOCK 1434 . 1459) (PAREN_BLOCK 1173 . 1178) (LOGICAL_OR 1161 . 1163) (SEMICOLON 1112 . 1113) (VAR 1114 . 1117) (PAREN_BLOCK 1133 . 1160) (PAREN_BLOCK 597 . 628) (LOGICAL_OR 585 . 587) (VAR 542 . 545) (PAREN_BLOCK 559 . 584) (PAREN_BLOCK 386 . 540) (LOGICAL_OR 383 . 385) (VAR 324 . 327) (PAREN_BLOCK 349 . 382) (PAREN_BLOCK 71 . 322) (LOGICAL_OR 68 . 70) (VAR 15 . 18) (PAREN_BLOCK 37 . 67))))
+  :file "!home!smonroe!cibic-backend!app!dist!src!fcm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

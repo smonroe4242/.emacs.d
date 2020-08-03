@@ -1,0 +1,1698 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("RESOURCE_LOADER_H" variable (:constant-flag t) nil [2240 2257])
+            ("core/os/thread.h" include nil nil [2259 2286])
+            ("core/resource.h" include nil nil [2287 2313])
+            ("ResourceInteractiveLoader" type
+               (:superclasses 
+                  ( ("Reference" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("GDCLASS" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("ResourceInteractiveLoader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2378 2404])
+                            ("" variable (:type ("Reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2405 2415]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2370 2416])
+                    ("ResourceLoader" friend nil (reparse-symbol classsubparts) [2418 2445])
+                    ("path_loading" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2448 2468])
+                    ("path_loading_thread" variable (:type ("Thread::ID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2470 2501])
+                    ("protected" label nil (reparse-symbol classsubparts) [2503 2513])
+                    ("_bind_methods" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2515 2543])
+                    ("public" label nil (reparse-symbol classsubparts) [2545 2552])
+                    ("set_local_path" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_local_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2582 2609]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2554 2614])
+                    ("get_resource" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("Ref" type
+                             (:template-specifier 
+                                ( ("Resource" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2616 2657])
+                    ("poll" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2659 2684])
+                    ("get_stage" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2686 2720])
+                    ("get_stage_count" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2722 2762])
+                    ("set_translation_remapped" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_remapped" variable (:type "bool") (reparse-symbol arg-sub-list) [2802 2818]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2764 2823])
+                    ("wait" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2825 2846])
+                    ("ResourceInteractiveLoader" function
+                       (:constructor-flag t
+                        :type ("ResourceInteractiveLoader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2849 2879])
+                    ("ResourceInteractiveLoader" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2881 2910]))                  
+                :type "class")
+                nil [2315 2913])
+            ("ResourceFormatLoader" type
+               (:superclasses 
+                  ( ("Reference" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("GDCLASS" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("ResourceFormatLoader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2973 2994])
+                            ("" variable (:type ("Reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2995 3005]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2965 3006])
+                    ("protected" label nil (reparse-symbol classsubparts) [3008 3018])
+                    ("_bind_methods" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3020 3048])
+                    ("public" label nil (reparse-symbol classsubparts) [3050 3057])
+                    ("load_interactive" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3115 3136])
+                            ("p_original_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "\"\""
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3137 3171])
+                            ("r_error" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("Error" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3173 3194]))                          
+                        :type ("Ref" type
+                             (:template-specifier 
+                                ( ("ResourceInteractiveLoader" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3059 3196])
+                    ("load" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3215 3236])
+                            ("p_original_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "\"\""
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3237 3271])
+                            ("r_error" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("Error" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3273 3294]))                          
+                        :type ("RES" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3198 3296])
+                    ("exists" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3318 3339]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3298 3346])
+                    ("get_recognized_extensions" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_extensions" variable
+                               (:pointer 1
+                                :type ("List" type
+                                     (:template-specifier 
+                                        ( ("String" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3387 3414]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3348 3421])
+                    ("get_recognized_extensions_for_type" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3471 3492])
+                            ("p_extensions" variable
+                               (:pointer 1
+                                :type ("List" type
+                                     (:template-specifier 
+                                        ( ("String" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3493 3520]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3423 3527])
+                    ("recognize_path" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3557 3578])
+                            ("p_for_type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "String()"
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3579 3614]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3529 3622])
+                    ("handles_type" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3650 3671]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3624 3678])
+                    ("get_resource_type" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3713 3734]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3680 3741])
+                    ("get_dependencies" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3773 3794])
+                            ("p_dependencies" variable
+                               (:pointer 1
+                                :type ("List" type
+                                     (:template-specifier 
+                                        ( ("String" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3795 3824])
+                            ("p_add_types" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [3825 3849]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3743 3851])
+                    ("rename_dependencies" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3887 3908])
+                            ("p_map" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Map" type
+                                     (:template-specifier 
+                                        ( ("String" type nil nil nil)
+                                          ("String" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3909 3942]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3853 3943])
+                    ("is_import_valid" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3974 3995]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3945 4018])
+                    ("is_imported" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4045 4066]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4020 4090])
+                    ("get_import_order" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4121 4142]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4092 4162])
+                    ("get_import_group_file" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4201 4222]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4164 4243])
+                    ("ResourceFormatLoader" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4257 4291]))                  
+                :type "class")
+                nil [2915 4294])
+            ("ResourceLoadErrorNotify" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("p_ud" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4336 4347])
+                    ("p_text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4348 4369]))                  
+                :type "void")
+                nil [4304 4370])
+            ("DependencyErrorNotify" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("p_ud" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4409 4420])
+                    ("p_loading" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4421 4445])
+                    ("p_which" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4446 4468])
+                    ("p_type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4469 4490]))                  
+                :type "void")
+                nil [4379 4491])
+            ("ResourceLoaderImport" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4531 4552]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [4501 4553])
+            ("ResourceLoadedCallback" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("p_resource" variable (:type ("RES" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4593 4608])
+                    ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4609 4630]))                  
+                :type "void")
+                nil [4562 4631])
+            ("ResourceLoader" type
+               (:members 
+                  ( ("" type
+                       (:members 
+                          ( ("MAX_LOADERS" variable
+                               (:constant-flag t
+                                :default-value (4681 4683)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [4667 4683]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [4658 4687])
+                    ("loader" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :type ("Ref" type
+                             (:template-specifier 
+                                ( ("ResourceFormatLoader" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4690 4743])
+                    ("loader_count" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [4745 4769])
+                    ("timestamp_on_load" variable
+                       (:typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4771 4801])
+                    ("err_notify_ud" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4804 4831])
+                    ("err_notify" variable
+                       (:typemodifiers ("static")
+                        :type ("ResourceLoadErrorNotify" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4833 4875])
+                    ("dep_err_notify_ud" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4877 4908])
+                    ("dep_err_notify" variable
+                       (:typemodifiers ("static")
+                        :type ("DependencyErrorNotify" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4910 4954])
+                    ("abort_on_missing_resource" variable
+                       (:typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4956 4994])
+                    ("translation_remaps" variable
+                       (:typemodifiers ("static")
+                        :type ("HashMap" type
+                             (:template-specifier 
+                                ( ("String" type nil nil nil)
+                                  ("Vector" type (:template-specifier 
+                                    ( ("String" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4996 5055])
+                    ("path_remaps" variable
+                       (:typemodifiers ("static")
+                        :type ("HashMap" type
+                             (:template-specifier 
+                                ( ("String" type nil nil nil)
+                                  ("String" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5057 5100])
+                    ("_path_remap" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5129 5150])
+                            ("r_translation_remapped" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [5151 5186]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5103 5188])
+                    ("Resource" friend nil (reparse-symbol classsubparts) [5190 5211])
+                    ("remapped_list" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5242 5261])
+                    ("ResourceFormatImporter" friend nil (reparse-symbol classsubparts) [5264 5299])
+                    ("ResourceInteractiveLoader" friend nil (reparse-symbol classsubparts) [5302 5340])
+                    ("_load" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5386 5407])
+                            ("p_original_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5408 5438])
+                            ("p_type_hint" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5439 5465])
+                            ("p_no_cache" variable (:type "bool") (reparse-symbol arg-sub-list) [5466 5482])
+                            ("r_error" variable
+                               (:pointer 1
+                                :type ("Error" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5483 5498]))                          
+                        :type ("RES" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5369 5499])
+                    ("_loaded_callback" variable
+                       (:typemodifiers ("static")
+                        :type ("ResourceLoadedCallback" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5502 5549])
+                    ("_find_custom_resource_format_loader" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("path" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5621 5633]))                          
+                        :type ("Ref" type
+                             (:template-specifier 
+                                ( ("ResourceFormatLoader" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5552 5634])
+                    ("loading_map_mutex" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("Mutex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5636 5668])
+                    ("LoadingMapKey" type
+                       (:members 
+                          ( ("path" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5769 5781])
+                            ("thread" variable (:type ("Thread::ID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5784 5802])
+                            ("==" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("p_key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LoadingMapKey" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5821 5848]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5805 5918]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [5744 5922])
+                    ("LoadingMapKeyHasher" type
+                       (:members 
+                          ( ("hash" function
+                               (:arguments 
+                                  ( ("p_key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LoadingMapKey" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5992 6019]))                                  
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5978 6092]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [5924 6096])
+                    ("loading_map" variable
+                       (:typemodifiers ("static")
+                        :type ("HashMap" type
+                             (:template-specifier 
+                                ( ("LoadingMapKey" type nil nil nil)
+                                  ("int" type nil nil nil)
+                                  ("LoadingMapKeyHasher" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6099 6167])
+                    ("_add_to_loading_map" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6202 6223]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6170 6224])
+                    ("_remove_from_loading_map" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6263 6284]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6226 6285])
+                    ("_remove_from_loading_map_and_thread" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6335 6356])
+                            ("p_thread" variable (:type ("Thread::ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6357 6377]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6287 6378])
+                    ("public" label nil (reparse-symbol classsubparts) [6380 6387])
+                    ("load_interactive" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6444 6465])
+                            ("p_type_hint" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "\"\""
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6466 6496])
+                            ("p_no_cache" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [6498 6521])
+                            ("r_error" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("Error" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6523 6544]))                          
+                        :type ("Ref" type
+                             (:template-specifier 
+                                ( ("ResourceInteractiveLoader" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6389 6546])
+                    ("load" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6564 6585])
+                            ("p_type_hint" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "\"\""
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6586 6616])
+                            ("p_no_cache" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [6618 6641])
+                            ("r_error" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("Error" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6643 6664]))                          
+                        :type ("RES" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6548 6666])
+                    ("exists" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6687 6708])
+                            ("p_type_hint" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "\"\""
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6709 6739]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6668 6741])
+                    ("get_recognized_extensions_for_type" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6791 6812])
+                            ("p_extensions" variable
+                               (:pointer 1
+                                :type ("List" type
+                                     (:template-specifier 
+                                        ( ("String" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6813 6840]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6744 6841])
+                    ("add_resource_format_loader" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_format_loader" variable (:type ("Ref" type
+                                 (:template-specifier 
+                                    ( ("ResourceFormatLoader" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [6882 6924])
+                            ("p_at_front" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [6925 6948]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6843 6950])
+                    ("remove_resource_format_loader" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_format_loader" variable (:type ("Ref" type
+                                 (:template-specifier 
+                                    ( ("ResourceFormatLoader" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [6994 7036]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6952 7037])
+                    ("get_resource_type" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7071 7092]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7039 7093])
+                    ("get_dependencies" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7124 7145])
+                            ("p_dependencies" variable
+                               (:pointer 1
+                                :type ("List" type
+                                     (:template-specifier 
+                                        ( ("String" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7146 7175])
+                            ("p_add_types" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [7176 7200]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7095 7202])
+                    ("rename_dependencies" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7237 7258])
+                            ("p_map" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Map" type
+                                     (:template-specifier 
+                                        ( ("String" type nil nil nil)
+                                          ("String" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7259 7292]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7204 7293])
+                    ("is_import_valid" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7323 7344]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7295 7345])
+                    ("get_import_group_file" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7383 7404]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7347 7405])
+                    ("is_imported" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7431 7452]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7407 7453])
+                    ("get_import_order" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7483 7504]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [7455 7505])
+                    ("set_timestamp_on_load" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("p_timestamp" variable (:type "bool") (reparse-symbol arg-sub-list) [7542 7559]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7508 7596])
+                    ("get_timestamp_on_load" function
+                       (:typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7598 7663])
+                    ("notify_load_error" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("p_err" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7696 7716]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7666 7773])
+                    ("set_error_notify_func" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("p_ud" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [7809 7820])
+                            ("p_err_notify" variable (:type ("ResourceLoadErrorNotify" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7821 7858]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7775 7916])
+                    ("notify_dependency_error" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7955 7976])
+                            ("p_dependency" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7977 8004])
+                            ("p_type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8005 8026]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7919 8118])
+                    ("set_dependency_error_notify_func" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("p_ud" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [8165 8176])
+                            ("p_err_notify" variable (:type ("DependencyErrorNotify" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8177 8212]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8120 8278])
+                    ("set_abort_on_missing_resources" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("p_abort" variable (:type "bool") (reparse-symbol arg-sub-list) [8324 8337]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8281 8378])
+                    ("get_abort_on_missing_resources" function
+                       (:typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8380 8462])
+                    ("path_remap" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8490 8511]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8465 8512])
+                    ("import_remap" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8541 8562]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8514 8563])
+                    ("load_path_remaps" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [8566 8597])
+                    ("clear_path_remaps" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [8599 8631])
+                    ("reload_translation_remaps" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [8634 8674])
+                    ("load_translation_remaps" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [8676 8714])
+                    ("clear_translation_remaps" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [8716 8755])
+                    ("set_load_callback" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("p_callback" variable (:type ("ResourceLoadedCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8788 8822]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8758 8823])
+                    ("import" variable
+                       (:typemodifiers ("static")
+                        :type ("ResourceLoaderImport" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8825 8860])
+                    ("add_custom_resource_format_loader" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("script_path" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8909 8928]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8863 8929])
+                    ("remove_custom_resource_format_loader" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("script_path" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8980 8999]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8931 9000])
+                    ("add_custom_loaders" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [9002 9035])
+                    ("remove_custom_loaders" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [9037 9073])
+                    ("initialize" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [9076 9101])
+                    ("finalize" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [9103 9126]))                  
+                :type "class")
+                nil [4633 9129]))          
+      :file "resource_loader.h"
+      :pointmax 9138
+      :fsize 9137
+      :lastmodtime '(24338 7863 43300 622000)
+      :unmatched-syntax '((symbol 5963 . 5977) (STATIC 5956 . 5962) (symbol 5963 . 5977) (STATIC 5956 . 5962) (punctuation 5340 . 5341) (punctuation 5299 . 5300) (punctuation 5241 . 5242) (punctuation 5240 . 5241) (punctuation 5239 . 5240) (symbol 5231 . 5239) (punctuation 5230 . 5231) (symbol 5222 . 5230) (STATIC 5215 . 5221) (punctuation 5211 . 5212) (TYPEDEF 4554 . 4561) (TYPEDEF 4493 . 4500) (TYPEDEF 4371 . 4378) (TYPEDEF 4296 . 4303) (punctuation 2445 . 2446))
+      :lexical-table 
+        '(("RESOURCE_LOADER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("resource_loader.h" include nil nil [2206 2234])
+            ("core/io/resource_importer.h" include nil nil [2236 2274])
+            ("core/os/file_access.h" include nil nil [2275 2307])
+            ("core/os/os.h" include nil nil [2308 2331])
+            ("core/path_remap.h" include nil nil [2332 2360])
+            ("core/print_string.h" include nil nil [2361 2391])
+            ("core/project_settings.h" include nil nil [2392 2426])
+            ("core/translation.h" include nil nil [2427 2456])
+            ("core/variant_parser.h" include nil nil [2457 2489])
+            ("ResourceLoader::loader" variable
+               (:dereference 1
+                :type ("Ref" type
+                     (:template-specifier 
+                        ( ("ResourceFormatLoader" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2491 2569])
+            ("ResourceLoader::loader_count" variable
+               (:default-value "0"
+                :type "int")
+                nil [2571 2608])
+            ("wait" function
+               (:parent "ResourceInteractiveLoader"
+                :type ("Error" type (:type "class") nil nil))
+                nil [2610 2729])
+            ("ResourceInteractiveLoader" function
+               (:destructor-flag t
+                :parent "ResourceInteractiveLoader"
+                :type "void")
+                nil [2731 2916])
+            ("recognize_path" function
+               (:methodconst-flag t
+                :parent "ResourceFormatLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2960 2981])
+                    ("p_for_type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2982 3007]))                  
+                :type "bool")
+                nil [2918 3393])
+            ("handles_type" function
+               (:methodconst-flag t
+                :parent "ResourceFormatLoader"
+                :arguments 
+                  ( ("p_type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3435 3456]))                  
+                :type "bool")
+                nil [3395 3702])
+            ("get_resource_type" function
+               (:methodconst-flag t
+                :parent "ResourceFormatLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3751 3772]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [3704 3954])
+            ("get_recognized_extensions_for_type" function
+               (:methodconst-flag t
+                :parent "ResourceFormatLoader"
+                :arguments 
+                  ( ("p_type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4018 4039])
+                    ("p_extensions" variable
+                       (:pointer 1
+                        :type ("List" type
+                             (:template-specifier 
+                                ( ("String" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4040 4067]))                  
+                :type "void")
+                nil [3956 4164])
+            ("get_recognized_extensions_for_type" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4222 4243])
+                    ("p_extensions" variable
+                       (:pointer 1
+                        :type ("List" type
+                             (:template-specifier 
+                                ( ("String" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4244 4271]))                  
+                :type "void")
+                nil [4166 4392])
+            ("_bind_methods" function
+               (:parent "ResourceInteractiveLoader"
+                :type "void")
+                nil [4394 4869])
+            ("ResourceInteractiveLoaderDefault" type
+               (:superclasses 
+                  ( ("ResourceInteractiveLoader" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("GDCLASS" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("ResourceInteractiveLoaderDefault" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4957 4990])
+                            ("" variable (:type ("ResourceInteractiveLoader" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4991 5017]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4949 5018])
+                    ("public" label nil (reparse-symbol classsubparts) [5020 5027])
+                    ("resource" variable (:type ("Ref" type
+                         (:template-specifier 
+                            ( ("Resource" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5029 5052])
+                    ("set_local_path" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_local_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5083 5110]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5055 5154])
+                    ("get_resource" function
+                       (:typemodifiers ("virtual")
+                        :type ("Ref" type
+                             (:template-specifier 
+                                ( ("Resource" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5156 5213])
+                    ("poll" function
+                       (:typemodifiers ("virtual")
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5215 5260])
+                    ("get_stage" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [5262 5305])
+                    ("get_stage_count" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [5307 5356])
+                    ("set_translation_remapped" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_remapped" variable (:type "bool") (reparse-symbol arg-sub-list) [5396 5412]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5358 5467])
+                    ("ResourceInteractiveLoaderDefault" function
+                       (:constructor-flag t
+                        :type ("ResourceInteractiveLoaderDefault" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5470 5507]))                  
+                :type "class")
+                nil [4871 5510])
+            ("load_interactive" function
+               (:parent "ResourceFormatLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5582 5603])
+                    ("p_original_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5604 5634])
+                    ("r_error" variable
+                       (:pointer 1
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5635 5650]))                  
+                :type ("Ref" type
+                     (:template-specifier 
+                        ( ("ResourceInteractiveLoader" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [5512 5956])
+            ("exists" function
+               (:methodconst-flag t
+                :parent "ResourceFormatLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5992 6013]))                  
+                :type "bool")
+                nil [5958 6088])
+            ("get_recognized_extensions" function
+               (:methodconst-flag t
+                :parent "ResourceFormatLoader"
+                :arguments 
+                  ( ("p_extensions" variable
+                       (:pointer 1
+                        :type ("List" type
+                             (:template-specifier 
+                                ( ("String" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6143 6170]))                  
+                :type "void")
+                nil [6090 6497])
+            ("load" function
+               (:parent "ResourceFormatLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6530 6551])
+                    ("p_original_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6552 6582])
+                    ("r_error" variable
+                       (:pointer 1
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6583 6598]))                  
+                :type ("RES" type (:type "class") nil nil))
+                nil [6499 7399])
+            ("get_dependencies" function
+               (:parent "ResourceFormatLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7445 7466])
+                    ("p_dependencies" variable
+                       (:pointer 1
+                        :type ("List" type
+                             (:template-specifier 
+                                ( ("String" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7467 7496])
+                    ("p_add_types" variable (:type "bool") (reparse-symbol arg-sub-list) [7497 7514]))                  
+                :type "void")
+                nil [7401 7840])
+            ("rename_dependencies" function
+               (:parent "ResourceFormatLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7890 7911])
+                    ("p_map" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Map" type
+                             (:template-specifier 
+                                ( ("String" type nil nil nil)
+                                  ("String" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7912 7945]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [7842 8299])
+            ("_bind_methods" function
+               (:parent "ResourceFormatLoader"
+                :type "void")
+                nil [8301 9350])
+            ("_load" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9415 9436])
+                    ("p_original_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9437 9467])
+                    ("p_type_hint" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9468 9494])
+                    ("p_no_cache" variable (:type "bool") (reparse-symbol arg-sub-list) [9495 9511])
+                    ("r_error" variable
+                       (:pointer 1
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9512 9527]))                  
+                :type ("RES" type (:type "class") nil nil))
+                nil [9389 10279])
+            ("_add_to_loading_map" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10322 10343]))                  
+                :type "bool")
+                nil [10281 10687])
+            ("_remove_from_loading_map" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10735 10756]))                  
+                :type "void")
+                nil [10689 10985])
+            ("_remove_from_loading_map_and_thread" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11044 11065])
+                    ("p_thread" variable (:type ("Thread::ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11066 11086]))                  
+                :type "void")
+                nil [10987 11300])
+            ("load" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11327 11348])
+                    ("p_type_hint" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11349 11375])
+                    ("p_no_cache" variable (:type "bool") (reparse-symbol arg-sub-list) [11376 11392])
+                    ("r_error" variable
+                       (:pointer 1
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11393 11408]))                  
+                :type ("RES" type (:type "class") nil nil))
+                nil [11302 13416])
+            ("exists" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13446 13467])
+                    ("p_type_hint" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13468 13494]))                  
+                :type "bool")
+                nil [13418 14078])
+            ("load_interactive" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14144 14165])
+                    ("p_type_hint" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14166 14192])
+                    ("p_no_cache" variable (:type "bool") (reparse-symbol arg-sub-list) [14193 14209])
+                    ("r_error" variable
+                       (:pointer 1
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14210 14225]))                  
+                :type ("Ref" type
+                     (:template-specifier 
+                        ( ("ResourceInteractiveLoader" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [14080 16121])
+            ("add_resource_format_loader" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_format_loader" variable (:type ("Ref" type
+                         (:template-specifier 
+                            ( ("ResourceFormatLoader" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [16171 16213])
+                    ("p_at_front" variable (:type "bool") (reparse-symbol arg-sub-list) [16214 16230]))                  
+                :type "void")
+                nil [16123 16526])
+            ("remove_resource_format_loader" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_format_loader" variable (:type ("Ref" type
+                         (:template-specifier 
+                            ( ("ResourceFormatLoader" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [16579 16621]))                  
+                :type "void")
+                nil [16528 16977])
+            ("get_import_order" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17016 17037]))                  
+                :type "int")
+                nil [16979 17484])
+            ("get_import_group_file" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17531 17552]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [17486 18022])
+            ("is_import_valid" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18061 18082]))                  
+                :type "bool")
+                nil [18024 18544])
+            ("is_imported" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18579 18600]))                  
+                :type "bool")
+                nil [18546 19058])
+            ("get_dependencies" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19098 19119])
+                    ("p_dependencies" variable
+                       (:pointer 1
+                        :type ("List" type
+                             (:template-specifier 
+                                ( ("String" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19120 19149])
+                    ("p_add_types" variable (:type "bool") (reparse-symbol arg-sub-list) [19150 19167]))                  
+                :type "void")
+                nil [19060 19628])
+            ("rename_dependencies" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19672 19693])
+                    ("p_map" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Map" type
+                             (:template-specifier 
+                                ( ("String" type nil nil nil)
+                                  ("String" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19694 19727]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [19630 20195])
+            ("get_resource_type" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20238 20259]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [20197 20581])
+            ("_path_remap" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20618 20639])
+                    ("r_translation_remapped" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [20640 20669]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [20583 23446])
+            ("import_remap" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23484 23505]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [23448 23689])
+            ("path_remap" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23725 23746]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [23691 23779])
+            ("reload_translation_remaps" function
+               (:parent "ResourceLoader"
+                :type "void")
+                nil [23781 24306])
+            ("load_translation_remaps" function
+               (:parent "ResourceLoader"
+                :type "void")
+                nil [24308 24901])
+            ("clear_translation_remaps" function
+               (:parent "ResourceLoader"
+                :type "void")
+                nil [24903 24983])
+            ("load_path_remaps" function
+               (:parent "ResourceLoader"
+                :type "void")
+                nil [24985 25400])
+            ("clear_path_remaps" function
+               (:parent "ResourceLoader"
+                :type "void")
+                nil [25402 25469])
+            ("set_load_callback" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("p_callback" variable (:type ("ResourceLoadedCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25510 25544]))                  
+                :type "void")
+                nil [25471 25580])
+            ("ResourceLoader::_loaded_callback" variable
+               (:default-value "NULL"
+                :type ("ResourceLoadedCallback" type (:type "class") nil nil))
+                nil [25582 25645])
+            ("_find_custom_resource_format_loader" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("path" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25725 25737]))                  
+                :type ("Ref" type
+                     (:template-specifier 
+                        ( ("ResourceFormatLoader" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [25647 25960])
+            ("add_custom_resource_format_loader" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("script_path" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26017 26036]))                  
+                :type "bool")
+                nil [25962 26910])
+            ("remove_custom_resource_format_loader" function
+               (:parent "ResourceLoader"
+                :arguments 
+                  ( ("script_path" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26970 26989]))                  
+                :type "void")
+                nil [26912 27166])
+            ("add_custom_loaders" function
+               (:parent "ResourceLoader"
+                :type "void")
+                nil [27168 27808])
+            ("remove_custom_loaders" function
+               (:parent "ResourceLoader"
+                :type "void")
+                nil [27810 28149])
+            ("ResourceLoader::loading_map_mutex" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("Mutex" type (:type "class") nil nil))
+                nil [28151 28199])
+            ("ResourceLoader::loading_map" variable (:type ("HashMap" type
+                 (:template-specifier 
+                    ( ("ResourceLoader::LoadingMapKey" type nil nil nil)
+                      ("int" type nil nil nil)
+                      ("ResourceLoader::LoadingMapKeyHasher" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [28200 28309])
+            ("initialize" function
+               (:parent "ResourceLoader"
+                :type "void")
+                nil [28311 28412])
+            ("finalize" function
+               (:parent "ResourceLoader"
+                :type "void")
+                nil [28414 28694])
+            ("ResourceLoader::err_notify" variable
+               (:default-value "NULL"
+                :type ("ResourceLoadErrorNotify" type (:type "class") nil nil))
+                nil [28696 28754])
+            ("ResourceLoader::err_notify_ud" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type "void")
+                nil [28755 28798])
+            ("ResourceLoader::dep_err_notify" variable
+               (:default-value "NULL"
+                :type ("DependencyErrorNotify" type (:type "class") nil nil))
+                nil [28800 28860])
+            ("ResourceLoader::dep_err_notify_ud" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type "void")
+                nil [28861 28908])
+            ("ResourceLoader::abort_on_missing_resource" variable
+               (:default-value "true"
+                :type "bool")
+                nil [28910 28964])
+            ("ResourceLoader::timestamp_on_load" variable
+               (:default-value "false"
+                :type "bool")
+                nil [28965 29012])
+            ("ResourceLoader::remapped_list" variable (:type ("List" type (:type "class") nil nil)) nil [29034 29069])
+            ("ResourceLoader::translation_remaps" variable (:type ("HashMap" type
+                 (:template-specifier 
+                    ( ("String" type nil nil nil)
+                      ("Vector" type (:template-specifier 
+                        ( ("String" type nil nil nil))                        ) nil nil))                    
+                  :type "class")
+                  nil nil)) nil [29070 29138])
+            ("ResourceLoader::path_remaps" variable (:type ("HashMap" type
+                 (:template-specifier 
+                    ( ("String" type nil nil nil)
+                      ("String" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [29139 29191])
+            ("ResourceLoader::import" variable
+               (:default-value "NULL"
+                :type ("ResourceLoaderImport" type (:type "class") nil nil))
+                nil [29193 29244]))          
+      :file "resource_loader.cpp"
+      :pointmax 29245
+      :fsize 29244
+      :lastmodtime '(24338 7863 43300 622000)
+      :unmatched-syntax '((punctuation 29033 . 29034) (punctuation 29032 . 29033) (punctuation 29031 . 29032) (symbol 29023 . 29031) (punctuation 29022 . 29023) (symbol 29014 . 29022)))
+    (semanticdb-table "semanticdb-table"
+      :file "resource_importer.h"
+      :fsize 6526
+      :lastmodtime '(24338 7863 43300 622000)))
+  :file "!home!smonroe!Godot!godot!core!io!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

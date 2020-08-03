@@ -1,0 +1,910 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("GODOT_NATIVENET_H" variable (:constant-flag t) nil [2240 2257])
+            ("gdnative/gdnative.h" include (:system-flag t) nil [2259 2289])
+            ("godot_net_bind_multiplayer_peer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GDAPI" type (:type "class") nil nil)
+                :arguments 
+                  ( ("p_obj" variable
+                       (:pointer 1
+                        :type ("godot_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5080 5100])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("godot_net_multiplayer_peer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5101 5136]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5042 5137])
+            ("godot_net_multiplayer_peer" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("version" variable (:type ("godot_gdnative_api_version" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3953 3988])
+                          ("data" variable
+                             (:pointer 1
+                              :type ("godot_object" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4016 4035])
+                          ("get_packet" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4111 4118])
+                                  ("" variable
+                                     (:pointer 2
+                                      :constant-flag t
+                                      :type ("uint8_t" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [4119 4136])
+                                  ("" variable
+                                     (:pointer 1
+                                      :type "int")
+                                      (reparse-symbol arg-sub-list) [4137 4143]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4085 4144])
+                          ("put_packet" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4172 4179])
+                                  ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type ("uint8_t" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [4180 4196])
+                                  ("" variable (:type "int") (reparse-symbol arg-sub-list) [4197 4201]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4146 4202])
+                          ("get_available_packet_count" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4244 4257]))                                
+                              :type ("godot_int" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4204 4258])
+                          ("get_max_packet_size" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4293 4306]))                                
+                              :type ("godot_int" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4260 4307])
+                          ("set_transfer_mode" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4376 4383])
+                                  ("" variable (:type ("godot_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4384 4394]))                                
+                              :type "void")
+                              (reparse-symbol classsubparts) [4350 4395])
+                          ("get_transfer_mode" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4428 4441]))                                
+                              :type ("godot_int" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4397 4442])
+                          ("set_target_peer" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4523 4530])
+                                  ("" variable (:type ("godot_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4531 4541]))                                
+                              :type "void")
+                              (reparse-symbol classsubparts) [4499 4542])
+                          ("get_packet_peer" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4573 4586]))                                
+                              :type ("godot_int" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4544 4587])
+                          ("is_server" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4613 4626]))                                
+                              :type ("godot_bool" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4589 4627])
+                          ("poll" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4642 4649]))                                
+                              :type "void")
+                              (reparse-symbol classsubparts) [4629 4650])
+                          ("get_unique_id" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4710 4723]))                                
+                              :type ("int32_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4685 4724])
+                          ("set_refuse_new_connections" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4761 4768])
+                                  ("" variable (:type ("godot_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4769 4780]))                                
+                              :type "void")
+                              (reparse-symbol classsubparts) [4726 4781])
+                          ("is_refusing_new_connections" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4825 4838]))                                
+                              :type ("godot_bool" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4783 4839])
+                          ("get_connection_status" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4876 4889]))                                
+                              :type ("godot_int" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4841 4890])
+                          ("next" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [4893 4904]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [3935 4971])
+            ("godot_net_bind_packet_peer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GDAPI" type (:type "class") nil nil)
+                :arguments 
+                  ( ("p_obj" variable
+                       (:pointer 1
+                        :type ("godot_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3881 3901])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("godot_net_packet_peer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3902 3932]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3848 3933])
+            ("godot_net_packet_peer" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("version" variable (:type ("godot_gdnative_api_version" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3368 3403])
+                          ("data" variable
+                             (:pointer 1
+                              :type ("godot_object" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3431 3450])
+                          ("get_packet" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [3526 3533])
+                                  ("" variable
+                                     (:pointer 2
+                                      :constant-flag t
+                                      :type ("uint8_t" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [3534 3551])
+                                  ("" variable
+                                     (:pointer 1
+                                      :type "int")
+                                      (reparse-symbol arg-sub-list) [3552 3558]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3500 3559])
+                          ("put_packet" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [3587 3594])
+                                  ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type ("uint8_t" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [3595 3611])
+                                  ("" variable (:type "int") (reparse-symbol arg-sub-list) [3612 3616]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3561 3617])
+                          ("get_available_packet_count" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [3659 3672]))                                
+                              :type ("godot_int" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3619 3673])
+                          ("get_max_packet_size" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [3708 3721]))                                
+                              :type ("godot_int" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3675 3722])
+                          ("next" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [3725 3736]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [3350 3782])
+            ("godot_net_bind_stream_peer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("p_obj" variable
+                       (:pointer 1
+                        :type ("godot_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3285 3305])
+                    ("p_interface" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("godot_net_stream_peer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3306 3347]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3253 3348])
+            ("godot_net_stream_peer" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("version" variable (:type ("godot_gdnative_api_version" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2621 2656])
+                          ("data" variable
+                             (:pointer 1
+                              :type ("godot_object" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [2683 2702])
+                          ("get_data" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("user" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [2776 2787])
+                                  ("p_buffer" variable
+                                     (:pointer 1
+                                      :type ("uint8_t" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [2788 2806])
+                                  ("p_bytes" variable (:type "int") (reparse-symbol arg-sub-list) [2807 2819]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [2752 2820])
+                          ("get_partial_data" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("user" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [2854 2865])
+                                  ("p_buffer" variable
+                                     (:pointer 1
+                                      :type ("uint8_t" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [2866 2884])
+                                  ("p_bytes" variable (:type "int") (reparse-symbol arg-sub-list) [2885 2897])
+                                  ("r_received" variable
+                                     (:pointer 1
+                                      :type "int")
+                                      (reparse-symbol arg-sub-list) [2898 2914]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [2822 2915])
+                          ("put_data" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("user" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [2941 2952])
+                                  ("p_data" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type ("uint8_t" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [2953 2975])
+                                  ("p_bytes" variable (:type "int") (reparse-symbol arg-sub-list) [2976 2988]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [2917 2989])
+                          ("put_partial_data" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("user" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [3023 3034])
+                                  ("p_data" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type ("uint8_t" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [3035 3057])
+                                  ("p_bytes" variable (:type "int") (reparse-symbol arg-sub-list) [3058 3070])
+                                  ("r_sent" variable
+                                     (:pointer 1
+                                      :type "int")
+                                      (reparse-symbol arg-sub-list) [3071 3083]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [2991 3084])
+                          ("get_available_bytes" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("user" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [3114 3131]))                                
+                              :type "int")
+                              (reparse-symbol classsubparts) [3087 3132])
+                          ("next" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [3135 3146]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [2602 3192])
+            ("GODOT_NET_API_MINOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2579 2598])
+            ("GODOT_NET_API_MAJOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2549 2568])
+            ("net/godot_webrtc.h" include nil nil [5187 5216]))          
+      :file "godot_net.h"
+      :pointmax 5249
+      :fsize 5248
+      :lastmodtime '(24338 7863 183302 702000)
+      :unmatched-syntax '((VOID 5037 . 5041) (VOID 3843 . 3847))
+      :lexical-table 
+        '(("GODOT_NET_API_MINOR" . ((number "1" 2599 . 2600)))
+          ("GODOT_NATIVENET_H")
+          ("GODOT_NET_API_MAJOR" . ((number "3" 2569 . 2570)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("GODOT_NATIVEWEBRTC_H" variable (:constant-flag t) nil [2243 2263])
+            ("gdnative/gdnative.h" include (:system-flag t) nil [2265 2295])
+            ("godot_net_bind_webrtc_data_channel" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GDAPI" type (:type "class") nil nil)
+                :arguments 
+                  ( ("p_obj" variable
+                       (:pointer 1
+                        :type ("godot_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5366 5386])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("godot_net_webrtc_data_channel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5387 5425]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5325 5426])
+            ("godot_net_bind_webrtc_peer_connection" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GDAPI" type (:type "class") nil nil)
+                :arguments 
+                  ( ("p_obj" variable
+                       (:pointer 1
+                        :type ("godot_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5190 5210])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("godot_net_webrtc_peer_connection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5211 5252]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5146 5253])
+            ("godot_net_set_webrtc_library" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GDAPI" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("godot_net_webrtc_library" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5037 5070]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5002 5071])
+            ("godot_net_webrtc_data_channel" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("version" variable (:type ("godot_gdnative_api_version" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3983 4018])
+                          ("data" variable
+                             (:pointer 1
+                              :type ("godot_object" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4046 4065])
+                          ("get_packet" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4141 4148])
+                                  ("" variable
+                                     (:pointer 2
+                                      :constant-flag t
+                                      :type ("uint8_t" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [4149 4166])
+                                  ("" variable
+                                     (:pointer 1
+                                      :type "int")
+                                      (reparse-symbol arg-sub-list) [4167 4173]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4115 4174])
+                          ("put_packet" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4202 4209])
+                                  ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type ("uint8_t" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [4210 4226])
+                                  ("" variable (:type "int") (reparse-symbol arg-sub-list) [4227 4231]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4176 4232])
+                          ("get_available_packet_count" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4274 4287]))                                
+                              :type ("godot_int" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4234 4288])
+                          ("get_max_packet_size" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4323 4336]))                                
+                              :type ("godot_int" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4290 4337])
+                          ("set_write_mode" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4396 4403])
+                                  ("" variable (:type ("godot_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4404 4414]))                                
+                              :type "void")
+                              (reparse-symbol classsubparts) [4373 4415])
+                          ("get_write_mode" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4445 4458]))                                
+                              :type ("godot_int" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4417 4459])
+                          ("was_string_packet" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4487 4500]))                                
+                              :type "bool")
+                              (reparse-symbol classsubparts) [4461 4501])
+                          ("get_ready_state" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4533 4546]))                                
+                              :type ("godot_int" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4504 4547])
+                          ("get_label" function
+                             (:prototype-flag t
+                              :pointer 1
+                              :function-pointer t
+                              :constant-flag t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4574 4587]))                                
+                              :type "char")
+                              (reparse-symbol classsubparts) [4549 4588])
+                          ("is_ordered" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4609 4622]))                                
+                              :type "bool")
+                              (reparse-symbol classsubparts) [4590 4623])
+                          ("get_id" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4639 4652]))                                
+                              :type "int")
+                              (reparse-symbol classsubparts) [4625 4653])
+                          ("get_max_packet_life_time" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4687 4700]))                                
+                              :type "int")
+                              (reparse-symbol classsubparts) [4655 4701])
+                          ("get_max_retransmits" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4730 4743]))                                
+                              :type "int")
+                              (reparse-symbol classsubparts) [4703 4744])
+                          ("get_protocol" function
+                             (:prototype-flag t
+                              :pointer 1
+                              :function-pointer t
+                              :constant-flag t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4774 4787]))                                
+                              :type "char")
+                              (reparse-symbol classsubparts) [4746 4788])
+                          ("is_negotiated" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4812 4825]))                                
+                              :type "bool")
+                              (reparse-symbol classsubparts) [4790 4826])
+                          ("poll" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4849 4856]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4829 4857])
+                          ("close" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [4873 4880]))                                
+                              :type "void")
+                              (reparse-symbol classsubparts) [4859 4881])
+                          ("next" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [4884 4895]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [3965 4949])
+            ("godot_net_webrtc_peer_connection" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("version" variable (:type ("godot_gdnative_api_version" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3070 3105])
+                          ("data" variable
+                             (:pointer 1
+                              :type ("godot_object" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3133 3152])
+                          ("get_connection_state" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [3246 3259]))                                
+                              :type ("godot_int" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3212 3260])
+                          ("initialize" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [3289 3296])
+                                  ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type ("godot_dictionary" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [3297 3322]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3263 3323])
+                          ("create_data_channel" function
+                             (:prototype-flag t
+                              :pointer 1
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [3362 3369])
+                                  ("p_channel_name" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "char")
+                                      (reparse-symbol arg-sub-list) [3370 3397])
+                                  ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type ("godot_dictionary" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [3398 3423]))                                
+                              :type ("godot_object" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3325 3424])
+                          ("create_offer" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [3454 3461]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3426 3462])
+                          ("create_answer" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [3493 3500]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3464 3501])
+                          ("set_remote_description" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [3617 3624])
+                                  ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "char")
+                                      (reparse-symbol arg-sub-list) [3625 3638])
+                                  ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "char")
+                                      (reparse-symbol arg-sub-list) [3639 3652]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3579 3653])
+                          ("set_local_description" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [3692 3699])
+                                  ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "char")
+                                      (reparse-symbol arg-sub-list) [3700 3713])
+                                  ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "char")
+                                      (reparse-symbol arg-sub-list) [3714 3727]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3655 3728])
+                          ("add_ice_candidate" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [3763 3770])
+                                  ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "char")
+                                      (reparse-symbol arg-sub-list) [3771 3784])
+                                  ("" variable (:type "int") (reparse-symbol arg-sub-list) [3785 3789])
+                                  ("" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type "char")
+                                      (reparse-symbol arg-sub-list) [3790 3803]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3730 3804])
+                          ("poll" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [3826 3833]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3806 3834])
+                          ("close" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [3850 3857]))                                
+                              :type "void")
+                              (reparse-symbol classsubparts) [3836 3858])
+                          ("next" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [3861 3872]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [3052 3929])
+            ("godot_net_webrtc_library" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("version" variable (:type ("godot_gdnative_api_version" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2506 2541])
+                          ("unregistered" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :type "void")
+                              (reparse-symbol classsubparts) [2663 2686])
+                          ("create_peer_connection" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type ("godot_object" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [2935 2950]))                                
+                              :type ("godot_error" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [2897 2951])
+                          ("next" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [2954 2965]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [2488 3013])
+            ("GODOT_NET_WEBRTC_API_MINOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2382 2408])
+            ("GODOT_NET_WEBRTC_API_MAJOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2345 2371]))          
+      :file "godot_webrtc.h"
+      :pointmax 5464
+      :fsize 5463
+      :lastmodtime '(24338 7691 632754 503000)
+      :unmatched-syntax '((VOID 5320 . 5324) (VOID 5141 . 5145) (symbol 4990 . 5001))
+      :lexical-table 
+        '(("GODOT_NET_WEBRTC_API_MAJOR" . ((number "3" 2372 . 2373)))
+          ("GODOT_NATIVEWEBRTC_H")
+          ("GODOT_NET_WEBRTC_API_MINOR" . ((number "2" 2409 . 2410)))
+          )
+))
+  :file "!home!smonroe!Godot!godot!modules!gdnative!include!net!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

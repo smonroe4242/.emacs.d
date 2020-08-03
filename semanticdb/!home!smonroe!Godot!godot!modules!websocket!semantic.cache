@@ -1,0 +1,306 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("WEBSOCKET_H" variable (:constant-flag t) nil [2234 2245])
+            ("core/crypto/crypto.h" include nil nil [2247 2278])
+            ("core/reference.h" include nil nil [2279 2306])
+            ("websocket_multiplayer_peer.h" include nil nil [2307 2346])
+            ("websocket_peer.h" include nil nil [2347 2374])
+            ("WebSocketServer" type
+               (:superclasses 
+                  ( ("WebSocketMultiplayerPeer" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("GDCLASS" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("WebSocketServer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2444 2460])
+                            ("" variable (:type ("WebSocketMultiplayerPeer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2461 2486]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2436 2487])
+                    ("GDCICLASS" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("WebSocketServer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2499 2515]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2489 2516])
+                    ("bind_ip" variable (:type ("IP_Address" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2519 2538])
+                    ("protected" label nil (reparse-symbol classsubparts) [2540 2550])
+                    ("_bind_methods" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2552 2580])
+                    ("private_key" variable (:type ("Ref" type
+                         (:template-specifier 
+                            ( ("CryptoKey" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2583 2610])
+                    ("ssl_cert" variable (:type ("Ref" type
+                         (:template-specifier 
+                            ( ("X509Certificate" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2612 2642])
+                    ("ca_chain" variable (:type ("Ref" type
+                         (:template-specifier 
+                            ( ("X509Certificate" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2644 2674])
+                    ("public" label nil (reparse-symbol classsubparts) [2676 2683])
+                    ("poll" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2685 2709])
+                    ("listen" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_port" variable (:type "int") (reparse-symbol arg-sub-list) [2732 2743])
+                            ("p_protocols" variable
+                               (:constant-flag t
+                                :default-value "Vector<String>()"
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("String" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2744 2795])
+                            ("gd_mp_api" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2797 2819]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2711 2825])
+                    ("stop" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2827 2851])
+                    ("is_listening" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2853 2891])
+                    ("has_peer" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_id" variable (:type "int") (reparse-symbol arg-sub-list) [2915 2924]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2893 2935])
+                    ("get_peer" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_id" variable (:type "int") (reparse-symbol arg-sub-list) [2973 2982]))                          
+                        :type ("Ref" type
+                             (:template-specifier 
+                                ( ("WebSocketPeer" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2937 2993])
+                    ("is_server" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2995 3026])
+                    ("get_connection_status" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type ("ConnectionStatus" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3028 3075])
+                    ("get_peer_address" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_peer_id" variable (:type "int") (reparse-symbol arg-sub-list) [3114 3128]))                          
+                        :type ("IP_Address" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3078 3139])
+                    ("get_peer_port" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_peer_id" variable (:type "int") (reparse-symbol arg-sub-list) [3167 3181]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3141 3192])
+                    ("disconnect_peer" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_peer_id" variable (:type "int") (reparse-symbol arg-sub-list) [3223 3237])
+                            ("p_code" variable
+                               (:default-value "1000"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3238 3255])
+                            ("p_reason" variable
+                               (:default-value "\"\""
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3257 3277]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3194 3283])
+                    ("_on_peer_packet" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p_peer_id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3307 3325]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3286 3326])
+                    ("_on_connect" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p_peer_id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3345 3363])
+                            ("p_protocol" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3364 3382]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3328 3383])
+                    ("_on_disconnect" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p_peer_id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3405 3423])
+                            ("p_was_clean" variable (:type "bool") (reparse-symbol arg-sub-list) [3424 3441]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3385 3442])
+                    ("_on_close_request" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p_peer_id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3467 3485])
+                            ("p_code" variable (:type "int") (reparse-symbol arg-sub-list) [3486 3497])
+                            ("p_reason" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3498 3514]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3444 3515])
+                    ("get_bind_ip" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type ("IP_Address" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3518 3549])
+                    ("set_bind_ip" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p_bind_ip" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IP_Address" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3568 3596]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3551 3597])
+                    ("get_private_key" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type ("Ref" type
+                             (:template-specifier 
+                                ( ("CryptoKey" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3600 3639])
+                    ("set_private_key" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p_key" variable (:type ("Ref" type
+                                 (:template-specifier 
+                                    ( ("CryptoKey" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [3662 3683]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3641 3684])
+                    ("get_ssl_certificate" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type ("Ref" type
+                             (:template-specifier 
+                                ( ("X509Certificate" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3687 3736])
+                    ("set_ssl_certificate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p_cert" variable (:type ("Ref" type
+                                 (:template-specifier 
+                                    ( ("X509Certificate" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [3763 3791]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3738 3792])
+                    ("get_ca_chain" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type ("Ref" type
+                             (:template-specifier 
+                                ( ("X509Certificate" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3795 3837])
+                    ("set_ca_chain" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p_ca_chain" variable (:type ("Ref" type
+                                 (:template-specifier 
+                                    ( ("X509Certificate" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [3857 3889]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3839 3890])
+                    ("set_buffers" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_in_buffer" variable (:type "int") (reparse-symbol arg-sub-list) [3919 3935])
+                            ("p_in_packets" variable (:type "int") (reparse-symbol arg-sub-list) [3936 3953])
+                            ("p_out_buffer" variable (:type "int") (reparse-symbol arg-sub-list) [3954 3971])
+                            ("p_out_packets" variable (:type "int") (reparse-symbol arg-sub-list) [3972 3990]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3893 3995])
+                    ("WebSocketServer" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("WebSocketServer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3998 4016])
+                    ("WebSocketServer" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4018 4037]))                  
+                :type "class")
+                nil [2376 4040]))          
+      :file "websocket_server.h"
+      :pointmax 4064
+      :fsize 4063
+      :lastmodtime '(24338 7863 215303 177000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("WEBSOCKET_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "websocket_multiplayer_peer.h"
+      :fsize 4508
+      :lastmodtime '(24338 7863 215303 177000))
+    (semanticdb-table "semanticdb-table"
+      :file "websocket_peer.h"
+      :fsize 3351
+      :lastmodtime '(24338 7863 215303 177000)))
+  :file "!home!smonroe!Godot!godot!modules!websocket!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

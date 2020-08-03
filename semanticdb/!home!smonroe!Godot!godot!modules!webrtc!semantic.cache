@@ -1,0 +1,234 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "webrtc_peer_connection_gdnative.cpp"
+      :pointmax 5697
+      :fsize 5696
+      :lastmodtime '(24338 7863 211303 118000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "webrtc_peer_connection_gdnative.h"
+      :pointmax 3696
+      :fsize 3695
+      :lastmodtime '(24338 7863 215303 177000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("WEBRTC_PEER_CONNECTION_H" variable (:constant-flag t) nil [2247 2271])
+            ("core/io/packet_peer.h" include nil nil [2273 2305])
+            ("modules/webrtc/webrtc_data_channel.h" include nil nil [2306 2353])
+            ("WebRTCPeerConnection" type
+               (:superclasses 
+                  ( ("Reference" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("GDCLASS" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("WebRTCPeerConnection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2412 2433])
+                            ("" variable (:type ("Reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2434 2444]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2404 2445])
+                    ("public" label nil (reparse-symbol classsubparts) [2447 2454])
+                    ("ConnectionState" type
+                       (:members 
+                          ( ("STATE_NEW" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2481 2491])
+                            ("STATE_CONNECTING" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2494 2511])
+                            ("STATE_CONNECTED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2514 2530])
+                            ("STATE_DISCONNECTED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2533 2552])
+                            ("STATE_FAILED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2555 2568])
+                            ("STATE_CLOSED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2571 2586]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2456 2587])
+                    ("protected" label nil (reparse-symbol classsubparts) [2589 2599])
+                    ("_bind_methods" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2601 2629])
+                    ("_create" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :function-pointer t
+                        :typemodifiers ("static")
+                        :type ("WebRTCPeerConnection" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2631 2673])
+                    ("public" label nil (reparse-symbol classsubparts) [2675 2682])
+                    ("get_connection_state" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :type ("ConnectionState" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2684 2741])
+                    ("initialize" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_config" variable
+                               (:default-value "Dictionary()"
+                                :type ("Dictionary" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2769 2803]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2744 2809])
+                    ("create_data_channel" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p_label" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2862 2877])
+                            ("p_options" variable
+                               (:default-value "Dictionary()"
+                                :type ("Dictionary" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2878 2913]))                          
+                        :type ("Ref" type
+                             (:template-specifier 
+                                ( ("WebRTCDataChannel" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2811 2919])
+                    ("create_offer" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2921 2954])
+                    ("set_remote_description" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("type" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2993 3005])
+                            ("sdp" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3006 3017]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2956 3022])
+                    ("set_local_description" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("type" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3060 3072])
+                            ("sdp" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3073 3084]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3024 3089])
+                    ("add_ice_candidate" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("sdpMidName" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3123 3141])
+                            ("sdpMlineIndexName" variable (:type "int") (reparse-symbol arg-sub-list) [3142 3164])
+                            ("sdpName" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3165 3180]))                          
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3091 3185])
+                    ("poll" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("Error" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3187 3212])
+                    ("close" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3214 3239])
+                    ("create_ref" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type ("Ref" type
+                             (:template-specifier 
+                                ( ("WebRTCPeerConnection" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3242 3288])
+                    ("create" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :type ("WebRTCPeerConnection" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3290 3328])
+                    ("WebRTCPeerConnection" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("WebRTCPeerConnection" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3331 3354])
+                    ("WebRTCPeerConnection" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3356 3380]))                  
+                :type "class")
+                nil [2355 3383])
+            ("VARIANT_ENUM_CAST" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("WebRTCPeerConnection::ConnectionState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3403 3441]))                  
+                :type "int")
+                nil [3385 3442]))          
+      :file "webrtc_peer_connection.h"
+      :pointmax 3478
+      :fsize 3477
+      :lastmodtime '(24338 7691 664754 978000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("WEBRTC_PEER_CONNECTION_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "webrtc_data_channel.h"
+      :fsize 3757
+      :lastmodtime '(24338 7863 211303 118000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "webrtc_peer_connection_js.cpp"
+      :pointmax 9787
+      :fsize 9786
+      :lastmodtime '(24338 7863 215303 177000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("WEBRTC_PEER_CONNECTION_JS_H" variable (:constant-flag t) nil [2250 2277]))          
+      :file "webrtc_peer_connection_js.h"
+      :pointmax 3331
+      :fsize 3330
+      :lastmodtime '(24338 7863 215303 177000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("WEBRTC_PEER_CONNECTION_JS_H")
+          )
+))
+  :file "!home!smonroe!Godot!godot!modules!webrtc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

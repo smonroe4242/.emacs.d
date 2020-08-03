@@ -24,6 +24,7 @@
     (add-hook 'c++-mode-hook 'helm-gtags-mode)
     (add-hook 'java-mode-hook 'helm-gtags-mode)
     (add-hook 'asm-mode-hook 'helm-gtags-mode)
+    (add-hook 'typescript-mode-hook 'helm-gtags-mode)
 
     ;; key bindings
     (with-eval-after-load 'helm-gtags
