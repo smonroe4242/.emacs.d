@@ -102,3 +102,11 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+auto-save-list
+*.elc
+\#*\#
+*~
+semanticdb
+projectile-bookmarks.eld
+games

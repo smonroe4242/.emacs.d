@@ -8,6 +8,7 @@
 				backward-sexp
 				beginning-of-buffer
 				beginning-of-defun
+				c-electric-semi&comma
 				downcase-region
 				electric-newline-and-maybe-indent
 				end-of-buffer
@@ -28,6 +29,7 @@
 				battery
 				eval-print-last-sexp
 				helm-M-x
+				helm-gtags-select
 				shrink-window-horizontally
 				xref-pop-marker-stack
 				))

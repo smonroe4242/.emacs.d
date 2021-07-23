@@ -1,1 +1,0 @@
-("~/Godot/Adamant/" "~/.emacs.d/" "~/Godot/godot/" "~/.emacs.d/lsp-mode/" "~/typeorm/" "~/cibic-backend/" "~/tmp/")

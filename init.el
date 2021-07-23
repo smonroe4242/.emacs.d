@@ -77,7 +77,7 @@ There are two things you can do about this warning:
  '(gdscript-godot-executable "~/Godot/godot/bin/godot.x11.opt.tools.64")
  '(package-selected-packages
 	 (quote
-		(helm-lsp spinner lsp-mode gdscript-rx ggtags tide gnu-elpa-keyring-update multiple-cursors iedit volatile-highlights anzu comment-dwim-2 ws-butler dtrt-indent yasnippet undo-tree helm-gtags helm-projectile helm-swoop helm zygospore projectile company use-package geiser))))
+		(flycheck helm-lsp spinner lsp-mode gdscript-rx ggtags tide gnu-elpa-keyring-update multiple-cursors iedit volatile-highlights anzu comment-dwim-2 ws-butler dtrt-indent yasnippet undo-tree helm-gtags helm-projectile helm-swoop helm zygospore projectile company use-package geiser))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -107,7 +107,7 @@ There are two things you can do about this warning:
 (set-language-environment "UTF-8")
 (setq-default font-lock-global-modes t)
 (setq-default tab-width 2)
-(setq-default indent-tabs-mode t)
+(setq-default indent-tabs-mode nil)
 (setq-default basic-offset 2)
 (global-set-key (kbd "DEL") 'backward-delete-char)
 (setq-default c-backspace-function 'backward-delete-char)
