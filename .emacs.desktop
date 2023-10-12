@@ -1,0 +1,175 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Mon Aug 16 15:21:51 2021
+;; Desktop file format version 208
+;; Emacs version 27.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (24858 51423 950845 785000) (desktop . "208") "bones@sokar" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-17-*-*-*-m-0-iso10646-1") (font-parameter . "Monospace-13") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "white") (background-color . "black") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tab-bar-lines . 0) (height . 101) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 16) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "dim gray") (sticky) (environment) (last-focus-update . t) (frameset--id . "8316-2F2C-2C31-98FB") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . ":1") (explicit-name) (tabs (current-tab (name . "*helm M-x*") (explicit-name))) (width . 380) (left . 0) (top . 18)) ((min-height . 8) (min-width . 40) (min-height-ignore . 6) (min-width-ignore . 24) (min-height-safe . 2) (min-width-safe . 8) (min-pixel-height . 168) (min-pixel-width . 400) (min-pixel-height-ignore . 126) (min-pixel-width-ignore . 240) (min-pixel-height-safe . 42) (min-pixel-width-safe . 80)) hc (pixel-width . 3836) (pixel-height . 2100) (total-width . 384) (total-height . 100) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 960) (pixel-height . 2100) (total-width . 96) (total-height . 100) (normal-height . 1.0) (normal-width . 0.2503912363067292) (buffer "environment.js" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 2158) (start . 1)) (prev-buffers ("onRequest.f.js" 3812 3812) ("onCreate.f.js<scheduleChangeRequests>" 1018 4283) ("wait-for.js" 640 2213) ("onCreate.test.js<recurringServices>" 1 1763) ("init.el" 2604 5461) ("environment.js" 1 2158) ("onRequest.test.js" 2355 3813) ("*shell*" 1 334170) ("*compilation*" 1 2402) ("onCreate.test.js<scheduleChangeRequests>" 1 509) ("*scratch*" 1 145))) (vc (pixel-width . 960) (pixel-height . 2100) (total-width . 96) (total-height . 100) (normal-height . 1.0) (normal-width . 0.2503912363067293) (combination-limit) (leaf (pixel-width . 960) (pixel-height . 1050) (total-width . 96) (total-height . 50) (normal-height . 0.5) (normal-width . 1.0) (buffer "onRequest.test.js" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 2871) (start . 2214)) (prev-buffers ("onRequest.test.js" 2214 2871) ("wait-for.js" 510 1867) ("onCreate.f.js<recurringServices>" 1452 2831) ("onRequest.f.js" 1427 3684) ("*compilation*" 1 2402) ("docs.js" 1 546) ("onCreate.f.js<scheduleChangeRequests>" 1 1) ("*scratch*" 1 145))) (leaf (last . t) (pixel-width . 960) (pixel-height . 1050) (total-width . 96) (total-height . 50) (normal-height . 0.5) (normal-width . 1.0) (buffer "onCreate.test.js<recurringServices>" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1564) (start . 813)) (prev-buffers ("onCreate.test.js<recurringServices>" 813 1564)))) (vc (last . t) (pixel-width . 1916) (pixel-height . 2100) (total-width . 192) (total-height . 100) (normal-height . 1.0) (normal-width . 0.49921752738654146) (combination-limit) (hc (pixel-width . 1916) (pixel-height . 1062) (total-width . 192) (total-height . 51) (normal-height . 0.5018341892883346) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 956) (pixel-height . 1062) (total-width . 96) (total-height . 51) (normal-height . 1.0) (normal-width . 0.5) (buffer "onCreate.test.js<scheduleChangeRequests>" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1734) (start . 907)) (prev-buffers ("onCreate.test.js<recurringServices>" 176 630) ("setup.jest.js" 1 421) ("docs.js" 1 431) ("onCreate.test.js<scheduleChangeRequests>" 907 1734) ("onCreate.f.js<scheduleChangeRequests>" 1 1116))) (leaf (last . t) (pixel-width . 960) (pixel-height . 1062) (total-width . 96) (total-height . 51) (normal-height . 1.0) (normal-width . 0.5) (buffer "*shell*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 334170) (start . 331174)) (prev-buffers ("*shell*" 331174 334170) ("onCreate.f.js<scheduleChangeRequests>" 4438 4659)))) (hc (last . t) (pixel-width . 1916) (pixel-height . 1038) (total-width . 192) (total-height . 49) (normal-height . 0.49816581071166544) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 956) (pixel-height . 1038) (total-width . 96) (total-height . 49) (normal-height . 1.0) (normal-width . 0.5) (buffer "docs.js" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 610) (start . 1)) (prev-buffers ("docs.js" 1 610) ("wait-for.js" 757 1207) ("onCreate.test.js<scheduleChangeRequests>" 907 1896) ("onCreate.f.js<scheduleChangeRequests>" 1 1) ("*scratch*" 1 145))) (leaf (last . t) (pixel-width . 960) (pixel-height . 1038) (total-width . 96) (total-height . 49) (normal-height . 1.0) (normal-width . 0.5) (buffer "*compilation*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)) (prev-buffers ("*compilation*" 1 1) ("docs.js" 1 546)))))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '(#("withDbAdmin" 0 11 (isearch-regexp-function nil isearch-case-fold-search nil)) #("helm-projectile" 0 15 (isearch-regexp-function nil isearch-case-fold-search t)) #("monospa" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("scheduleChangeRequest" 0 21 (isearch-case-fold-search nil isearch-regexp-function nil)) #("scheduleChangeRequestMessage" 0 28 (isearch-case-fold-search nil isearch-regexp-function nil)) #("lastRequest" 0 11 (isearch-case-fold-search nil isearch-regexp-function nil)) #("change" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("string" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("console" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("response:" 0 9 (isearch-case-fold-search t isearch-regexp-function nil)) #("response" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("getData" 0 7 (isearch-regexp-function nil isearch-case-fold-search nil)) #("decline" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("isDst" 0 5 (isearch-case-fold-search nil isearch-regexp-function nil)) #("." 0 1 (isearch-case-fold-search t isearch-regexp-function nil)) #("monosp" 0 6 (isearch-case-fold-search t isearch-regexp-function nil))))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/cares/firebase-tests/test-fns/utils/#%2Aediff-merge%2A#XLQvg7#" "~/cares/firebase-tests/node_modules/firebase-jest-testing/src/config.js" "~/cares/firebase-tests/node_modules/firebase-jest-testing/src/firestoreAdmin/setup/index.js" "~/cares/firebase-tests/test-fns/setup.jest.js" "~/cares/firebase-tests/node_modules/firebase-jest-testing/src/firestoreAdmin/setup/wipe.js" "~/cares/firebase-tests/node_modules/firebase-jest-testing/src/firestoreAdmin/dbAdmin.js" "~/.emacs.d/init.el" "~/cares/config/environment.js" "~/cares/functions/firestore/recurringServices/onCreate.f.js" "~/cares/firebase-tests/test-fns/firestore/recurringServices/onCreate.test.js" "~/cares/firebase-tests/test-fns/utils/wait-for.js" "~/.ssh/id_ed25519.pub" "~/cares/firebase-tests/test-fns/docs.js" "~/cares/firebase-tests/test-fns/http/twilioSms/onRequest.test.js" "~/cares/functions/http/twilioSms/onRequest.f.js" "~/cares/firebase-tests/test-fns/firestore/scheduleChangeRequests/onCreate.test.js" "~/cares/functions/firestore/scheduleChangeRequests/onCreate.f.js"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/bones/cares/config/environment.js"
+  "environment.js"
+  'js-mode
+  '(override-global-mode company-mode projectile-mode helm-mode volatile-highlights-mode ws-butler-mode anzu-mode yas-minor-mode)
+  2158
+  '(2158 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24858 51421 962926 125000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1767 1734))))
+
+(desktop-create-buffer 208
+  "/home/bones/cares/functions/http/twilioSms/onRequest.f.js"
+  "onRequest.f.js"
+  'js-mode
+  '(override-global-mode company-mode projectile-mode helm-mode volatile-highlights-mode ws-butler-mode anzu-mode yas-minor-mode)
+  3812
+  '(4949 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24858 46937 415406 738000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (278 5322 5318 5295 190 6045 6118 2382 6250 5685 5065 3524 3642 3545 2788 3690 3690 3690 3490 3690 3690 3690 4934 5452 5445 5424 5424 5453 5452 3489 3568 3620 3690 3690 3072 2979 5701 6044 6231 3015 5237 4780 5243 5569 2478 3620 3799 3684))))
+
+(desktop-create-buffer 208
+  "/home/bones/cares/functions/firestore/scheduleChangeRequests/onCreate.f.js"
+  "onCreate.f.js"
+  'js-mode
+  '(override-global-mode company-mode projectile-mode helm-mode volatile-highlights-mode ws-butler-mode anzu-mode yas-minor-mode)
+  4283
+  '(4659 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24858 46479 56128 532000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (410 157 4568 302 4659 4284 2891 3257 3199 3137 3075 329 2890 2882 3888 4569 1639 4659))))
+
+(desktop-create-buffer 208
+  "/home/bones/cares/firebase-tests/test-fns/utils/wait-for.js"
+  "wait-for.js"
+  'js-mode
+  '(override-global-mode company-mode projectile-mode helm-mode volatile-highlights-mode ws-butler-mode anzu-mode yas-minor-mode)
+  2213
+  '(2333 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24858 46454 473012 589000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2375 74 639 1524 1434 1311 2170 2171 1178 2061 984 951 1868 708 1658 1525 2306 3121 736 2373 2983 1867 1207 1540 2213))))
+
+(desktop-create-buffer 208
+  "/home/bones/cares/firebase-tests/test-fns/docs.js"
+  "docs.js"
+  'js-mode
+  '(override-global-mode company-mode projectile-mode helm-mode volatile-highlights-mode ws-butler-mode anzu-mode yas-minor-mode)
+  610
+  '(869 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24858 51421 962927 101000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (782 722 660 542 612 431))))
+
+(desktop-create-buffer 208
+  "/home/bones/cares/firebase-tests/test-fns/firestore/scheduleChangeRequests/onCreate.test.js"
+  "onCreate.test.js"
+  'js-mode
+  '(override-global-mode company-mode projectile-mode helm-mode volatile-highlights-mode ws-butler-mode anzu-mode yas-minor-mode)
+  1734
+  '(1706 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24858 51421 962926 778000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (509 744 1070 1039 1006 736 975 1037 1733))))
+
+(desktop-create-buffer 208
+  "/home/bones/cares/firebase-tests/test-fns/http/twilioSms/onRequest.test.js"
+  "onRequest.test.js"
+  'js-mode
+  '(override-global-mode company-mode projectile-mode helm-mode volatile-highlights-mode ws-butler-mode anzu-mode yas-minor-mode)
+  2871
+  '(2871 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24858 51421 962926 452000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (272 2958 2844 1854 2895 1242 1858 5552 6833 8271 9761 11255 12939 4608 6090 7590 9037 10524 12153 12938 12796 3984 6379 5139 3714 1 13258 3033 3181 2988 1220 2582 1306 1263 3774 1236 5139 3714 5160 3735 3982 2959 3033 2871 1916 272))))
+
+(desktop-create-buffer 208
+  "/home/bones/cares/firebase-tests/test-fns/firestore/recurringServices/onCreate.test.js"
+  "onCreate.test.js"
+  'js-mode
+  '(override-global-mode company-mode projectile-mode helm-mode volatile-highlights-mode ws-butler-mode anzu-mode yas-minor-mode)
+  1564
+  '(1547 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24858 51421 962926 595000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1547 1065 94 1763 1506 1606 1714 1666 1584 1181 1490 1114 1358 1329 1289 1254 1737 1 1584 1180 1744 1199 1597 1474 1523 1584 1598))))
+
+(desktop-create-buffer 208
+  "/home/bones/cares/firebase-tests/test-fns/setup.jest.js"
+  "setup.jest.js"
+  'js-mode
+  '(override-global-mode company-mode projectile-mode helm-mode volatile-highlights-mode ws-butler-mode anzu-mode yas-minor-mode)
+  421
+  '(36 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24858 41450 224829 490000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (452))))
+
+(desktop-create-buffer 208
+  "/home/bones/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(eldoc-mode override-global-mode company-mode projectile-mode helm-mode volatile-highlights-mode ws-butler-mode anzu-mode yas-minor-mode)
+  5461
+  '(5461 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24858 38429 768281 785000) (buffer-file-coding-system . prefer-utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/bones/cares/functions/firestore/recurringServices/onCreate.f.js"
+  "onCreate.f.js"
+  'js-mode
+  '(override-global-mode company-mode projectile-mode helm-mode volatile-highlights-mode ws-butler-mode anzu-mode yas-minor-mode)
+  2831
+  '(2207 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24858 35074 162755 836000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1995 2090 2072))))
+
+(desktop-create-buffer 208
+  nil
+  "firebase-jest-testing"
+  'dired-mode
+  '(override-global-mode company-mode projectile-mode helm-mode helm-gtags-mode volatile-highlights-mode anzu-mode)
+  576
+  '(nil nil)
+  t
+  '("/home/bones/cares/firebase-tests/node_modules/firebase-jest-testing/")
+  '((buffer-display-time 24858 41462 933842 914000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "cares"
+  'dired-mode
+  '(override-global-mode company-mode projectile-mode helm-mode helm-gtags-mode volatile-highlights-mode anzu-mode)
+  284
+  '(nil nil)
+  t
+  '("/home/bones/cares/")
+  '((buffer-display-time 24858 42353 519170 832000))
+  '((mark-ring nil)))
+

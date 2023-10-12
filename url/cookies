@@ -2,11 +2,21 @@
 ;; Automatically generated file!!! DO NOT EDIT!!!
 
 (setq url-cookie-storage
- '((".docs.godotengine.org"
-	[url-cookie "__cfduid" "db988e3abfd92094438ed93ca1670bb021596154459" "Sun, 30-Aug-20 00:14:19 GMT" "/" ".docs.godotengine.org" nil]))
+ '(("firebase.google.com"
+  [url-cookie "_ga_devsite" "GA1.3.3673071485.1627565713" "Sat Jul 29 13:36:14 2023 GMT" "/" "firebase.google.com" nil]))
 )
 (setq url-cookie-secure-storage
- 'nil)
+ '((".github.com"
+  [url-cookie "logged_in" "yes" "Sat, 24 Dec 2022 04:54:01 GMT" "/" ".github.com" t]
+  [url-cookie "dotcom_user" "smonroe4242" "Sat, 24 Dec 2022 04:54:01 GMT" "/" ".github.com" t])
+ ("github.com"
+  [url-cookie "_octo" "GH1.1.977574142.1627565228" "Fri, 29 Jul 2022 13:27:08 GMT" "/" "github.com" t]
+  [url-cookie "logged_in" "no" "Fri, 29 Jul 2022 13:27:08 GMT" "/" "github.com" t]
+  [url-cookie "_device_id" "8b48aa17ded2bc6a0e5675715fe986c7" "Sun, 04 Sep 2022 21:47:24 GMT" "/" "github.com" t]
+  [url-cookie "has_recent_activity" "1" "Fri, 24 Dec 2021 05:54:01 GMT" "/" "github.com" t]
+  [url-cookie "user_session" "2HmTczhnCJzhaUKxml2_LMNDm1Tyg_4S6yJvrhDIf4IGewJH" "Fri, 07 Jan 2022 04:54:01 GMT" "/" "github.com" t]
+  [url-cookie "__Host-user_session_same_site" "2HmTczhnCJzhaUKxml2_LMNDm1Tyg_4S6yJvrhDIf4IGewJH" "Fri, 07 Jan 2022 04:54:01 GMT" "/" "github.com" t]))
+)
 
 ;; Local Variables:
 ;; version-control: never
