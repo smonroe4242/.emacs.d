@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        abort-recursive-edit
         backward-delete-char
         backward-sentence
         backward-sexp
